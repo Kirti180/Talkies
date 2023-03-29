@@ -1,5 +1,5 @@
 # befitting-harbor-9010
-![logo](./Images/Talkies_logo.jpeg)
+![logo](https://user-images.githubusercontent.com/114337213/228550899-b8c32e8b-a152-4313-b5e6-d517a9417d33.jpeg)
 
 Reatime screen sharing web application..
 
