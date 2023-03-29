@@ -1,2 +1,2 @@
 # befitting-harbor-9010
-	Real time screen sharing application
+![logo](./Images/Talkies_logo.jpeg)
