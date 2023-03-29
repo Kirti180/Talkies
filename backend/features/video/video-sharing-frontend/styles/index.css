@@ -1,0 +1,91 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-size: 45px;
+    text-align: center;
+    margin-top: 120px;
+}
+
+h2{
+    text-align: center;
+    margin-top: -20px;
+}
+
+#logo{
+    width: 100%;
+    margin-top: 0;
+}
+
+#logoDiv{
+    width: 30%;
+    margin: auto;
+    margin-top: 25px;
+}
+
+#form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 25px;
+}
+
+input{
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+    
+}
+
+button{
+    padding: 6.5px 20px;
+    background-color: #4f4f4f;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+    cursor: pointer;
+    transition: .7s;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: white;
+    color: #000000;
+}
+
+/* Create/join room */
+
+#main{
+    margin: auto;
+    border-radius: 10px;
+    width: 30%;
+    height: fit-content;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+#create-room, #join-room{
+    padding: 20px;
+    background-color: aqua;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+#join-room{
+    margin-top: 20px;
+    background-color: aquamarine;
+}
+
+#create-room:hover, #join-room:hover{
+    cursor: pointer;
+}

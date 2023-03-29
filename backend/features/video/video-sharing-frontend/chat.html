@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WorkDesk Video plateform</title>
+    <link rel="icon" type="image/x-icon" href="./workdesk-logo.png" />
+    <link rel="stylesheet" href="./styles/chat.css" />
+    <script src="https://unpkg.com/peerjs@1.3.2/dist/peerjs.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+<!-- s -->
+  <body>
+    <div id="logoDiv">
+      <img id="logo" src="./workdesk-logo.png" alt="" />
+    </div>
+
+    <div id="videoDiv"></div>
+
+    <div id="controls">
+      <p id="hangup">
+        <a href="./index.html"
+          ><img
+            class="icon"
+            src="https://icons.veryicon.com/png/o/miscellaneous/cloud-call-center/hang-up.png"
+            alt=""
+        /></a>
+        <p id="hideV" class="icon-color"><img width="50px"  class="icon" src="./images/cam.png" alt=""></p>
+        <p id="hideA" class="icon-color"><img  class="icon" src="./images/mike.png" alt=""></p>
+      </p>
+    </div>
+    
+    <!-- test -->
+  </body>
+</html>
+
+<script
+  src="https://cdn.socket.io/4.5.4/socket.io.min.js"
+  integrity="sha384-/KNQL8Nu5gCHLqwqfQjA689Hhoqgi2S84SNUxC3roTe4EhJ9AfLkp8QiQcU8AMzI"
+  crossorigin="anonymous"
+></script>
+
+<script src="./src/chat2.js"></script>
