@@ -29,5 +29,5 @@ Reatime screen sharing web application..
 -  User can join the call by using the room ID
 -  To end the call click on hang on button
 System_design
-![line](https://assets1.lottiefiles.com/packages/lf20_18QlHa.json)
+![line](./Images/31564-horizontal-line.gif)
 ![Untitled Diagram](https://user-images.githubusercontent.com/87657007/225451422-8d5c05ca-5046-4c10-b890-1f02bbcd3d73.jpg)
