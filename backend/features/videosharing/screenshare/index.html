@@ -1,0 +1,49 @@
+~<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Talkies</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <h2 class="titile">Welcome to Talkies</h2>
+    
+    <div>
+      <img src="meltedgroup.png" width="30%"  alt="">
+    </div>
+    <p id="notification" hidden></p>
+    <!-- <p>Create and Join Meeting</p> -->
+    <div class="modelContainer">
+      <div class="entry-modal" id="entry-modal">
+        <i class="bi bi-people-fill"></i>       
+         <div class="inputbox">
+          <input type="text" id="room-input" class="room-input" placeholder="Enter Your Room ID" />
+        </div>
+        <div id="control">
+          <button type="button" class="btn btn-success" onclick="createRoom()">Create Room</button>
+          <button type="button" class="btn btn-info" onclick="joinRoom()">Join Room</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="meet-area">
+      <!--There are Video elements  -->
+      <video id="remote-video"></video>
+
+      <!--There will we local video elements  -->
+
+      <video id="local-video"></video>
+      <div class="meet-controls-bar">
+        <button type="button" class="btn btn-warning"  onclick="startScreenShare()">Start Share</button>
+        <button type="button" class="btn btn-warning"  onclick="stopScreenSharing()">Stop Share</button>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+<script src="app.js"></script>
