@@ -12,12 +12,24 @@
 
     
 }
+
 #allcontent{
 	margin: auto;
 }
 img{
 	width: 600px;
 }
+p{
+	margin: auto;
+	padding-left:150px ;
+	padding-top: 10px;
+}
+p i{
+	font-size: 30px;
+   padding-left: 10px;
+   padding-bottom: 20px;
+}
+
 
 
 
@@ -33,13 +45,13 @@ body{
 
 	margin-top: 40%;
 	width: 400px;
-	height: 500px;
+	height: 530px;
 	background: red;
 	overflow: hidden;
 	background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38") no-repeat center/ cover;
 	border-radius: 10px;
 	box-shadow: 5px 20px 50px #000;
-	background: #2d90ec;
+	background: #0b5cff;
 }
 #chk{
 	display: none;
@@ -78,7 +90,7 @@ button{
 	justify-content: center;
 	display: block;
 	color: #fff;
-	background: #7ebaf2;
+	background: #0b5cff;
 	font-size: 1em;
 	font-weight: bold;
 	margin-top: 20px;
@@ -99,7 +111,7 @@ button:hover{
 	transition: .8s ease-in-out;
 }
 .login label{
-	color: #2d90ec;
+	color:#0b5cff;
 	transform: scale(.6);
 }
 
@@ -116,7 +128,7 @@ button:hover{
 
 	#img img{
 		width: 400px;
-		height: 500px;
+		height: 530px;
 		/* display: inline; */
 		margin-left: 50px			
 	}
@@ -154,7 +166,7 @@ button:hover{
 
 	#img img{
 		width: 400px;
-		height: 500px;
+		height: 530px;
 		/* display: inline; */
 		margin-left: 50px			
 	}
@@ -173,7 +185,7 @@ button:hover{
 @media(max-width: 947px){
 	#img img{
 		width: 300px;
-		height: 500px;
+		height: 530px;
 		/* display: inline; */
 		margin-left: 50px			
 	}
@@ -200,7 +212,7 @@ button:hover{
 	}
 	.main{
 		width: 400px;
-		height: 500px;
+		height: 530px;
 	  
 	}
 	#allcontent{
@@ -222,7 +234,7 @@ button:hover{
 	}
 	.main{
 		width: 320px;
-		height: 500px;
+		height: 530px;
 	  
 	}
 	#allcontent{
@@ -242,7 +254,7 @@ button:hover{
 	}
 	.main{
 		width: 320px;
-	height: 500px;
+	height: 530px;
 	  
 	}
 	#allcontent{
@@ -318,7 +330,7 @@ button:hover{
 
 .navbar a:hover{
 
-	color: #208cf1;
+	color: #0b5cff;
 
 
 }
