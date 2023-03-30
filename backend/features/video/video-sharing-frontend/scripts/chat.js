@@ -1,66 +1,136 @@
-const socket = io('http://localhost:5000/');
+new AWN().asyncBlock(
+    fetch('https://video-chat-rbe8.onrender.com/start'),
+    'Room Joined Successfully',
+)
+
+const socket = io('https://video-chat-rbe8.onrender.com/');
 const videoDiv = document.getElementById('videoDiv');
+const hideA = document.getElementById('hide-audio');
+const hideV = document.getElementById('hide-video');
+const room = document.getElementById("roomID");
 const myPeer = new Peer();
+
+let userStream;
+
+const urlParams = new URLSearchParams(window.location.search);
+const roomID = urlParams.get('roomID');
+
+room.innerText = `Your Room ID is ${roomID}, Happy Video-Chatting !!`;
 
 const video = document.createElement('video');
 video.muted = true;
 
 //To keep track of user connected 
 const userConnected = {}
-// s
-// The function will be returning a promise so it will be executed at the end
+
+
+// Asking for video and audio feature
 navigator.mediaDevices.getUserMedia({
     video: true,
-    audio: true
+    audio: true,
+
 }).then(stream => {
 
-    // Invoking function to append client's video in the video element
-    addStream(video, stream)
+    // Appending the user video to video element
+    addStream(video, stream);
+    userStream = stream;
 
     //When Someone call us
     myPeer.on('call', (call) => {
 
         //--For receiving Calls--
 
-        //answered call and sending our current stream
+        //answered call and send our current stream
         call.answer(stream)
 
-        //responding to coming videoStream and adding the another client's stream in our video element
+        //responding and adding the coming videoStream
         const video = document.createElement('video');
         call.on('stream', (userStream) => {
             addStream(video, userStream)
         })
     })
 
+    // user joined the room
     socket.on('user-join', (userID) => {
-        connectNewUser(userID, stream);
+        connectNewUser(userID, stream)
     })
 
 }).catch(err => {
     console.log(err);
 })
 
-// Whenever a peer connects, sending the peer/user id to the server
-myPeer.on('open', (id) => {
-    // ID is used to connect other peer
-    // console.log(id);
-    const RoomID = localStorage.getItem("RoomID");
-    // console.log(RoomID)
-    socket.emit('join-room', RoomID, id);
+
+// Hiding the video functionality
+hideV.addEventListener("click", () => {
+    const videoTrack = userStream.getTracks().find(track => track.kind === 'video');
+    if (videoTrack.enabled) {
+        videoTrack.enabled = false;
+        hideV.style = `width: 50px;
+        height: 50px;
+        cursor: pointer;
+        background-color: black;
+        border-radius: 100%;
+        padding: 8px;
+        margin: 10px;
+        margin-top: 40px;`
+    } else {
+        videoTrack.enabled = true;
+        hideV.style = `width: 50px;
+        height: 50px;
+        cursor: pointer;
+        background-color: white;
+        border-radius: 100%;
+        padding: 8px;
+        margin: 10px;
+        margin-top: 40px;`
+    }
+
 })
 
 
-// when any of the client leaves
+
+// Disable audio functionality
+hideA.addEventListener("click", () => {
+    const videoTrack = userStream.getTracks().find(track => track.kind === 'audio');
+    if (videoTrack.enabled) {
+        videoTrack.enabled = false;
+        hideA.style = `width: 50px;
+        height: 50px;
+        cursor: pointer;
+        background-color: black;
+        border-radius: 100%;
+        padding: 8px;
+        margin: 10px;
+        margin-top: 40px;`
+    } else {
+        videoTrack.enabled = true;
+        hideA.style = `width: 50px;
+        height: 50px;
+        cursor: pointer;
+        background-color: white;
+        border-radius: 100%;
+        padding: 8px;
+        margin: 10px;
+        margin-top: 40px;`
+
+    }
+
+})
+
+
+//To close the conneciton of disconnected user
 socket.on('user-disconnected', (userID) => {
-    //To close the conneciton of disconnected user
     if (userConnected[userID]) {
-        userConnected[userID].close();
+        userConnected[userID].close()
     }
 })
 
+// When a new client connects
+myPeer.on('open', (id) => {
+    socket.emit('join-room', roomID, id)
+})
 
-// Series of events:-
-// 1. when new user connects here we are creating a new video element, by the peer id 
+
 const connectNewUser = (userID, stream) => {
 
     //--Make call when new user connects to our room--
@@ -77,21 +147,24 @@ const connectNewUser = (userID, stream) => {
     })
 
     //Add to object whenever new user joins
-    userConnected[userID] = call;
+    userConnected[userID] = call
 }
 
 
-// Appending the video stream to video container
+// Appending the video to video element
 const addStream = (video, stream) => {
     video.srcObject = stream;
     video.addEventListener('loadedmetadata', () => {
-        video.play();
+        video.play()
     })
+
     videoDiv.append(video)
+
 }
 
-// let hangup = document.getElementById("hangup");
-// hangup.onclick = () => {
-//     // console.log("Call cut");
-//     window.location.href("https://icons.veryicon.com/png/o/miscellaneous/cloud-call-center/hang-up.png")
-// }
+// Hangup functionality
+let hangup = document.getElementById("hangup");
+hangup.onclick = () => {
+    // console.log("Call cut");
+    window.location.href("https://icons.veryicon.com/png/o/miscellaneous/cloud-call-center/hang-up.png")
+}
