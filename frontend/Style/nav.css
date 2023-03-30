@@ -1,16 +1,20 @@
 * {
     margin: 0px;
     padding: 0px;
+
 }
 
 nav {
     width: auto;
-    padding: 10px 20px;
-    padding-bottom: 0px;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    /* padding: 10px 20px;
+    padding-bottom: 0px; */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     height: auto;
     margin-left: 3%;
     margin-right: 3%;
+    /* position:fixed;
+   background-color: white; */
+    /* border: 1px solid red; */
 }
 
 #navBar {
@@ -19,27 +23,49 @@ nav {
     gap: 3%;
     margin: auto;
     align-items: center;
-    padding: 0px 20px;
-    margin-bottom: 40px;
+    padding: 10px 20px;
+    /* margin: 10px 0px; */
 
 }
 
 #navBar div:nth-child(1) {
     /* border: 1px solid rgb(24, 184, 59); */
     width: 12%;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#navBar div:nth-child(1):hover {
+    
+    background-color: #b5d0f8;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 }
 
 #navBar div:nth-child(2) {
     /* border: 1px solid rgb(24, 184, 59); */
     width: 55%;
+}
 
+#navBar div:nth-child(2) li,
+#navBar div:nth-child(3) li {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
 
+}
+
+#navBar div:nth-child(2) li:hover,
+#navBar div:nth-child(3) li:hover {
+
+    background-color: #b5d0f8;
 }
 
 #navBar div:nth-child(3) {
     /* border: 1px solid rgb(24, 184, 59); */
     width: 30%;
 }
+
 
 #navBar ul {
     /* border: 1px solid rgb(19, 19, 20); */
@@ -49,26 +75,31 @@ nav {
     font-size: 21px;
     list-style: none;
     color: black;
-   
+
 }
 
 #navBar div:nth-child(3) ul {
     gap: 5%;
     justify-content: end;
-   
+
 
 }
 
 
 a {
     text-decoration: none;
-    color: black;
+    color: #00053d;
+
+}
+
+li {
+    font-weight: 200px;
 }
 
 a:hover {
 
     text-decoration: underline;
-    color: rgb(96, 59, 230);
+    color: rgb(59 130 246 / 0.5);
 }
 
 img {
@@ -76,3 +107,25 @@ img {
 
     /* border: 1px solid rgb(231, 173, 14); */
 }
+
+@media (max-width:920px) {
+    #navBar {
+
+        flex-direction: column;
+    }
+
+    #navBar div {
+        flex-wrap: nowrap;
+        text-align: center;
+        /* border: 1px solid rgb(231, 173, 14);
+         */
+    }
+
+    #navBar div>ul {
+
+        margin: auto;
+        text-align: center;
+    }
+}
+
+@media (max-width:620px) {}
