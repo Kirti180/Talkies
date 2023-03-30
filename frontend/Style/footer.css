@@ -30,9 +30,9 @@ a, button{
     transition:0.5s;
 }
 
-a, p{
+/* a, p{
     font-size:14px;
-}
+} */
 
 h1, h2, h3, h4, h5, h6{
     color:var(--primary);
@@ -99,12 +99,15 @@ fieldset{
     border:1px solid var(--secondary);
     background-color:var(--secondary);
     color:var(--primary);
+    background-color: #b5d0f8;
 }
 
 .btn_2:hover{
     border:1px solid var(--primary);
     background-color:var(--primary);
     color:var(--secondary);
+    cursor: pointer;
+   
 }
 
 @media (max-width:920px){
