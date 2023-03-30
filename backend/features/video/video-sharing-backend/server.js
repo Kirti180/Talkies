@@ -4,18 +4,31 @@ const express = require('express');
 const {Server} = require('socket.io');
 const http = require('http');
 const cors = require('cors');
+const { client } = require("./db");
+const { roomRoute } = require("./routes/room.routes");
 
 const app = express();
+app.use(express.json());
+
 app.use(cors({
     origin : '*'
 }))
-// kl
+
 const httpServer =  http.createServer(app);
 
-app.get("/start" , (req,res) => {
-    res.send("Welcome To Talkies Video Server");
+app.get("/start" , async(req,res) => {
+    // Using setitemout so that the connection should be established
+    try {
+        setTimeout(()=>{
+            res.send({"ok":true,"msg":"Connection Established successfully"});
+        },3000)
+        
+    } catch (error) {
+        res.send({"ok":false,"msg":"Something went wrong"});
+    }
 })
 
+app.use("/room", roomRoute);
 
 const io = new Server(httpServer , {
     cors : {
@@ -38,6 +51,14 @@ io.on('connection', (socket) => {
 
 })
 
-httpServer.listen(process.env.PORT , () => {
+client.on('error', err => console.log('Redis Client Error', err));
+
+httpServer.listen(process.env.PORT , async() => {
+    try {
+        await client.connect();
+        console.log("Redis connected");
+    } catch (error) {
+        console.log("Redis not connected");
+    }
     console.log(`Server started at ${process.env.PORT}`);
 })
