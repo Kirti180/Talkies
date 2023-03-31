@@ -32,7 +32,7 @@ img{
 	 width: 20px;
 	 height: 30px;
 	 padding-top: 15px;
-	 margin-right: 10px;
+	 /* margin-left: 10px; */
 	
 
 }
@@ -43,6 +43,12 @@ img{
 	margin: 20px 85px;
 	padding-bottom: 10px;
 	border-radius: 6px;
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+	
+}
+#google span{
+	margin: auto;
+	padding: 0px 8px;
 	
 }
 #google:hover{
@@ -54,15 +60,21 @@ p i{
    padding-left: 10px;
    padding-bottom: 20px;
 }
-#loginbtn{
+#login-form  #loginbtn{
 	font-size: 18px;
-	 text-align: center;
-	 background-color: #208cf1;
-	 /* width: 60%;
-	height: 30px; */
-	justify-content: center;
-	display: flex;
+	background: #7ebaf2;
+	width: 60%;
+	height: 40px;
+	margin: auto;
+	padding: 10px 0px;
+	border-radius: 5px;
 	
+}
+#login-form  #loginbtn:hover{
+
+	font-size: 18px;
+	background: #e84138;
+	transition: 0.9s ease;
 }
 
 

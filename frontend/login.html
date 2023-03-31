@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -49,9 +50,13 @@
             <input id="pass" type="password" name="pswd" placeholder="Password" required="">
             <button id="signbtn">Sign up</button>
           </form>
-          <div id="google"><img
-              src="https://webimages.mongodb.com/_com_assets/cms/kr6fvgdym4qzsgqo3-Google%20Icon.svg?auto=format%252Ccompress"
-              alt=""><span>Sign up with Google</span> </div>
+          <div id="google">
+           
+            <span><img
+                src="https://webimages.mongodb.com/_com_assets/cms/kr6fvgdym4qzsgqo3-Google%20Icon.svg?auto=format%252Ccompress"
+                alt=""><span></span><span> <i class="fa fa-facebook"></i></span> <span><i
+                  class="fa-brands fa-github"></i></span>
+          </div>
 
         </div>
 
@@ -63,11 +68,12 @@
             <input id="loginbtn" type="submit" value="Login">
 
           </form>
-          <div id="google"><img
-              src="https://webimages.mongodb.com/_com_assets/cms/kr6fvgdym4qzsgqo3-Google%20Icon.svg?auto=format%252Ccompress"
-              alt=""><span>Sign up with Google</span>
+          <div id="google">
+            <span><img
+                src="https://webimages.mongodb.com/_com_assets/cms/kr6fvgdym4qzsgqo3-Google%20Icon.svg?auto=format%252Ccompress"
+                alt=""><span></span><span> <i class="fa fa-facebook"></i></span> <span><i
+                  class="fa-brands fa-github"></i></span>
           </div>
-
         </div>
       </div>
     </div>
@@ -75,102 +81,4 @@
 </body>
 
 </html>
-<script>
-
-
-  let signbtn = document.getElementById("signbtn")
-
-  signbtn.addEventListener("click", (e) => {
-    e.preventDefault()
-    let name = document.getElementById("name").value
-    let email = document.getElementById("email").value
-    let pass = document.getElementById("pass").value
-    let signdata = {
-      name: name,
-      email: email,
-      password: pass
-    }
-    console.log(signdata)
-    fetch("http://localhost:6040/user/sign", {
-
-      method: "POST",
-      body: JSON.stringify(signdata),
-      headers: {
-        "Content-type": "application/json"
-      }
-    }).then(res => res.json())
-
-      .then((res) => {
-        console.log(res)
-        alert(`Registration succesfull ${signdata.name}`)
-        let name = document.getElementById("name").value = ""
-        let email = document.getElementById("email").value = ""
-        let pass = document.getElementById("pass").value = ""
-
-      })
-
-      .catch((err) => {
-        console.log(err)
-        alert(`you are Alrady Registrad`)
-        let name = document.getElementById("name").value = ""
-        let email = document.getElementById("email").value = ""
-        let pass = document.getElementById("pass").value = ""
-
-      })
-
-
-  })
-
-
-  // login script is  start hare
-  var flag = false
-  let login = document.getElementById("login-form")
-
-  login.addEventListener("submit", (e) => {
-    e.preventDefault()
-
-
-    let lemail = document.getElementById("lemail").value
-    let lpass = document.getElementById("lpass").value
-    let signdata = {
-      email: lemail,
-      password: lpass
-    }
-    console.log(signdata)
-    fetch("http://localhost:6040/user/login", {
-
-      method: "POST",
-      body: JSON.stringify(signdata),
-      headers: {
-        "Content-type": "application/json"
-      }
-    }).then(res => res.json())
-
-      .then((res) => {
-        console.log(res)
-       
-        let lemail = document.getElementById("lemail").value = ""
-        let lpass = document.getElementById("lpass").value = ""
-        flag = true
-
-        if (flag) {
-          alert("done")
-          window.location.href = "./index.html"
-        }
-
-      })
-      .catch((err) => {
-        console.log(err)
-        // alert(err.res)
-        let lemail = document.getElementById("lemail").value = ""
-        let lpass = document.getElementById("lpass").value = ""
-      })
-
-
-
-  })
-
-
-
-
-</script>
+<script src="./Scripts/authentication.js"></script>

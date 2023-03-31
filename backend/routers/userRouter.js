@@ -61,9 +61,9 @@ userrouter.post("/login", async (req, res) => {
 
 
           res.send({
-            mes: "login succefull",
-            token: token
-           
+            "mes": "login successfully",
+            "user_details":{name:user[0].name,email:user[0].email},
+            "token": token         
           });
         } else {
           res.send("somthing went wrong data");
