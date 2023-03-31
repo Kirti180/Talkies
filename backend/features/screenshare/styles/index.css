@@ -1,0 +1,106 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #FAFAFA;
+}
+
+h1{
+    font-size: 45px;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+#logo{
+    width: 100%;
+    margin-top: 0;
+}
+
+#logoDiv{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+#form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 25px;
+}
+
+input{
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+    
+}
+
+button{
+    padding: 6.5px 20px;
+    background-color: #4f4f4f;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+    cursor: pointer;
+    transition: .7s;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: white;
+    color: #000000;
+}
+
+/* Create/join room */
+
+#main{
+    margin: auto;
+    border-radius: 10px;
+    width: 30%;
+    height: fit-content;
+    padding: 20px 50px 50px 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#create-room, #join-room{
+    padding: 20px;
+    background-color: #051187;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+}
+
+#join-room{
+    margin-top: 20px;
+    background-color: #0a5cfe;
+}
+
+#create-room:hover, #join-room:hover{
+    cursor: pointer;
+    background-color: #4778db;
+}
+
+@media screen and (max-width: 500px) {
+    #main{
+        width: 80%;
+        padding: 30px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    #create-room, #join-room{
+        width: 90%;
+    }
+}
