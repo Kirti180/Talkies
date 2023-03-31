@@ -7,8 +7,8 @@ const {
   getRoomUsers,
   getCurrentUser,
   userLeave,
-} = require("./utils/users");
-const formateMessage = require("./utils/messages");
+} = require("./routes/users");
+const formateMessage = require("./routes/messages");
 
 // server connection
 
@@ -28,7 +28,7 @@ io.on("connection", (socket) => {
     // Welcome message
     socket.emit(
       "message",
-      formateMessage("Masai Server", "Welcome to masai Server")
+      formateMessage("Server ", " Welcome to Talkies Chat Server")
     );
 
     // Broadcasting other users
@@ -36,7 +36,7 @@ io.on("connection", (socket) => {
       .to(user.room)
       .emit(
         "message",
-        formateMessage("Masai Server", `${username} has joined the chat`)
+        formateMessage("Server", `${username} has joined the chat`)
       );
 
     // getting room users.
@@ -59,7 +59,7 @@ io.on("connection", (socket) => {
     // Broadcastion other users on leaving
     io.to(user.room).emit(
       "message",
-      formateMessage("Masai Server", `${user.username} has left the chat`)
+      formateMessage("Server", `${user.username} has left the chat`)
     );
 
     // getting room users.
