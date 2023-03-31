@@ -18,6 +18,9 @@
     "jsonwebtoken": "^9.0.0",
     "mongoos": "^0.0.1-security",
     "mongoose": "^7.0.3",
+    "node-fetch": "^3.3.1",
+    "passport": "^0.6.0",
+    "passport-google-oauth20": "^2.0.0",
     "winston": "^3.8.2"
   }
 }

@@ -1,21 +1,24 @@
-
 const express = require("express")
-require("dotenv").config()
-const cors = require("cors")
-const app  = express()
-const {connection} = require("./config/db")
-app.use(cors())
-app.use(express.json())
-const {userrouter} = require("./routers/userRouter")
+const cors = require("cors");
+const app  = express();
+const {connection} = require("./config/db");
+const {userrouter} = require("./routers/user.routes");
+const { authRoute } = require("./routers/auth.routes");
 
+require("dotenv").config();
 
+app.use(cors());
+app.use(express.json());
 
 
 app.get("/",(req,res)=>{
-     res.send("wlc to home page")
+     res.send("welcome to Talkies home page")
 })
 
-app.use("/user",userrouter)
+app.use("/user",userrouter);
+
+app.use("/auth", authRoute);
+
 
 app.listen(process.env.port,async()=>{
      try{
