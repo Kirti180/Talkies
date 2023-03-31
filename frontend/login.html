@@ -5,34 +5,32 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Signup</title>
+  <title>Sign  up</title>
   <link rel="stylesheet" href="./style/login.css">
-  <link rel="stylesheet" type="text/css" href="slide navbar style.css">
+  <link rel="icon" href="./Images/fav_icon.PNG" />
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 </head>
- 
+
 <body>
-   <!-- navbar starts -->
-   <nav class="navbar">
+  <!-- navbar starts -->
+  <nav class="navbar">
     <div class="navbar-container container">
-        <input type="checkbox" name="" id="">
-        <div class="hamburger-lines">
-            <span class="line line1"></span>
-            <span class="line line2"></span>
-            <span class="line line3"></span>
-        </div>
-        <ul class="menu-items">
-            <li><a href="./login.html">Home</a></li>
-            <li><a href="#">Join</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Signup</a></li>
-           
-        </ul>
-      <img  class="logo" src="./Images/icon.png" alt=""> 
+      <input type="checkbox" name="" id="">
+      <div class="hamburger-lines">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </div>
+      <ul class="menu-items">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./login.html">Login</a></li>
+        <li><a href="./login.html">Signup</a></li>
+      </ul>
+      <img class="logo" src="./Images/icon.png" alt="">
     </div>
-</nav>
+  </nav>
 
   <!-- mid part start -->
   <div id="main-div">
@@ -46,21 +44,30 @@
         <div class="signup">
           <form>
             <label for="chk" aria-hidden="true">Sign up</label>
-            <input type="text" name="txt" placeholder="User name" required="">
-            <input type="email" name="email" placeholder="Email" required="">
-            <input type="password" name="pswd" placeholder="Password" required="">
-            <button>Sign up</button>
+            <input id="name" type="text" name="txt" placeholder="User name" required="">
+            <input id="email" type="email" name="email" placeholder="Email" required="">
+            <input id="pass" type="password" name="pswd" placeholder="Password" required="">
+            <button id="signbtn">Sign up</button>
           </form>
-          <p><i class="fa-brands fa-github"></i><span id="google"><i class="fa-brands fa-google"></i></span></p>
+          <div id="google"><img
+              src="https://webimages.mongodb.com/_com_assets/cms/kr6fvgdym4qzsgqo3-Google%20Icon.svg?auto=format%252Ccompress"
+              alt=""><span>Sign up with Google</span> </div>
+
         </div>
 
         <div class="login">
-          <form>
+          <form id="login-form">
             <label for="chk" aria-hidden="true">Login</label>
-            <input type="email" name="email" placeholder="Email" required="">
-            <input type="password" name="pswd" placeholder="Password" required="">
-            <button>Login</button>
+            <input id="lemail" type="email" name="email" placeholder="Email" required="">
+            <input id="lpass" type="password" name="pswd" placeholder="Password" required="">
+            <input id="loginbtn" type="submit" value="Login">
+
           </form>
+          <div id="google"><img
+              src="https://webimages.mongodb.com/_com_assets/cms/kr6fvgdym4qzsgqo3-Google%20Icon.svg?auto=format%252Ccompress"
+              alt=""><span>Sign up with Google</span>
+          </div>
+
         </div>
       </div>
     </div>
@@ -68,5 +75,102 @@
 </body>
 
 </html>
+<script>
 
-<script src="./loginjs/login.js"></script>
+
+  let signbtn = document.getElementById("signbtn")
+
+  signbtn.addEventListener("click", (e) => {
+    e.preventDefault()
+    let name = document.getElementById("name").value
+    let email = document.getElementById("email").value
+    let pass = document.getElementById("pass").value
+    let signdata = {
+      name: name,
+      email: email,
+      password: pass
+    }
+    console.log(signdata)
+    fetch("http://localhost:6040/user/sign", {
+
+      method: "POST",
+      body: JSON.stringify(signdata),
+      headers: {
+        "Content-type": "application/json"
+      }
+    }).then(res => res.json())
+
+      .then((res) => {
+        console.log(res)
+        alert(`Registration succesfull ${signdata.name}`)
+        let name = document.getElementById("name").value = ""
+        let email = document.getElementById("email").value = ""
+        let pass = document.getElementById("pass").value = ""
+
+      })
+
+      .catch((err) => {
+        console.log(err)
+        alert(`you are Alrady Registrad`)
+        let name = document.getElementById("name").value = ""
+        let email = document.getElementById("email").value = ""
+        let pass = document.getElementById("pass").value = ""
+
+      })
+
+
+  })
+
+
+  // login script is  start hare
+  var flag = false
+  let login = document.getElementById("login-form")
+
+  login.addEventListener("submit", (e) => {
+    e.preventDefault()
+
+
+    let lemail = document.getElementById("lemail").value
+    let lpass = document.getElementById("lpass").value
+    let signdata = {
+      email: lemail,
+      password: lpass
+    }
+    console.log(signdata)
+    fetch("http://localhost:6040/user/login", {
+
+      method: "POST",
+      body: JSON.stringify(signdata),
+      headers: {
+        "Content-type": "application/json"
+      }
+    }).then(res => res.json())
+
+      .then((res) => {
+        console.log(res)
+       
+        let lemail = document.getElementById("lemail").value = ""
+        let lpass = document.getElementById("lpass").value = ""
+        flag = true
+
+        if (flag) {
+          alert("done")
+          window.location.href = "./index.html"
+        }
+
+      })
+      .catch((err) => {
+        console.log(err)
+        // alert(err.res)
+        let lemail = document.getElementById("lemail").value = ""
+        let lpass = document.getElementById("lpass").value = ""
+      })
+
+
+
+  })
+
+
+
+
+</script>

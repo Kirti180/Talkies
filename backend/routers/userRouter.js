@@ -21,22 +21,24 @@ userrouter.post("/sign", async (req, res) => {
 
     if (auser) {
       res.send("user already register");
+    }else{
+
+      
+      bcrypt.hash(password, 5, async (err, hash) => {
+        if (err) {
+          res.send({ err: err.message });
+        }
+        
+        const user = new usermodel({ name, email, password: hash});
+        
+        await user.save();
+        
+        res.send({ mes: "resistration sucucfull" });
+      });
     }
-
-    bcrypt.hash(password, 5, async (err, hash) => {
-      if (err) {
-        res.send({ err: err.message });
-      }
-
-      const user = new usermodel({ name, email, password: hash});
-
-      await user.save();
-
-      res.send({ mes: "resistration sucucfull" });
-    });
-  } catch (err) {
-    res.send({ mes: err.message });
-  }
+    } catch (err) {
+      res.send({ mes: err.message });
+    }
 });
 
 
@@ -54,7 +56,7 @@ userrouter.post("/login", async (req, res) => {
       bcrypt.compare(password, user.password, (err, result) => {
         if (result) {
           let token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET, {
-            expiresIn: "24h",
+            expiresIn: "30m",
           });
 
 
