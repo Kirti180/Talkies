@@ -11,24 +11,23 @@ app.use(cors());
 app.use(express.json());
 
 
-app.get("/",(req,res)=>{
-     res.send("welcome to Talkies home page")
+require("dotenv").config();
+
+app.get("/", (req, res) => {
+     res.send("wlc to home page")
 })
 
-app.use("/user",userrouter);
+app.use("/user", userrouter)
 
-app.use("/auth", authRoute);
+app.listen(process.env.port, async () => {
+     try {
+          await connection
+          console.log("db is connect ")
 
 
-app.listen(process.env.port,async()=>{
-     try{
-        await connection
-        console.log("db is connect ")
-       
+     } catch (err) {
+          console.log({ err: err.message })
 
-     }catch(err){
-         console.log({err:err.message})
-        
      }
 
      console.log(`server is running ${process.env.port} .....`)
