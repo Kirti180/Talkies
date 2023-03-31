@@ -1,101 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Style/dashboard.css">
-    <script src="https://kit.fontawesome.com/714346974b.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Style/dashboard.css" />
+    <script
+      src="https://kit.fontawesome.com/714346974b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
     <!-- <link rel="stylesheet" href="./Style/login.css.css"> -->
-  
+
     <title>Dashboard</title>
-    
-</head>
-<body>
+  </head>
+  <body>
     <!-- navbar -->
     <nav>
-        <i class="fa-solid fa-bars" id="hamburger"></i>
-        <div id="nav_right_side">
-            <div id="brand_name"><a href="./index.html" class="indexstyle1"><img src="./Images/Talkies_logo.jpeg" alt="" height="100%" width="100%"></a> </div>
-            <!-- <input type="text" placeholder="Search here" > -->
+      <i class="fa-solid fa-bars" id="hamburger"></i>
+      <div id="nav_right_side">
+        <div id="brand_name">
+          <a href="./index.html" class="indexstyle1"
+            ><img src="./Images/icon.png" alt="" height="100%" width="100% "
+          /></a>
         </div>
-        <div id="nav_left_side">
-
-            <div><i class="fa-solid fa-house"></i><span><a class="indexstyle" href="./customerRegister.html">Home</a></span></div>
-
-            <div><i class="fa-solid fa-video"></i><span><a href="#" class="indexstyle">Video Call</a> </span></div>
-            <div><i class="fa-solid fa-video"></i><span><a href="./cartpage.html" class="indexstyle">Screen Share</a> </span></div>
-            <div><i class="fa-solid fa-message "></i><span><a href="./cartpage.html" class="indexstyle">Message</a> </span></div>
+        <!-- <input type="text" placeholder="Search here" > -->
+      </div>
+      <div id="nav_left_side">
+        <div>
+          <i class="fa-solid fa-house fa-xl"></i
+          ><span><a class="indexstyle" href="./index.html">Home</a></span>
         </div>
+
+        <div>
+          <i class="fa-solid fa-video fa-xl"></i
+          ><span
+            ><a
+              href="../backend/features/video/video-sharing-frontend/index.html"
+              class="indexstyle"
+              >Video Call</a
+            >
+          </span>
+        </div>
+        <div>
+          <i class="fa-solid fa-video fa-xl"></i
+          ><span
+            ><a href="./cartpage.html" class="indexstyle">Screen Share</a>
+          </span>
+        </div>
+        <div>
+          <i class="fa-solid fa-message fa-xl"></i
+          ><span
+            ><a
+              href="../backend/features/messages/public/message.html"
+              class="indexstyle"
+              >Message</a
+            >
+          </span>
+        </div>
+        <div>
+          <i class="fa-solid fa-user fa-xl"></i
+          ><span
+            ><a
+              href="#"
+              class="indexstyle"
+              >Name</a
+            >
+          </span>
+        </div>
+      </div>
     </nav>
-    <div id="burger" >
-        <div  class="burger_inside">Espanol/</div>
-        <div  class="burger_inside">List your property</div>
-        <div  class="burger_inside">Support</div>
-        <div  class="burger_inside">Trips</div>
-        <div   class="burger_inside"><a href="./register.html" > Sign in</a></div>
+    <div id="burger">
+      <div class="burger_inside">Video Call</div>
+      <div class="burger_inside">Screen Share</div>
+      <div class="burger_inside">Message</div>
+      <div class="burger_inside">Home</div>
     </div>
-      
-    <br><br>
+
+    <br /><br />
     <!-- main content -->
     <div id="main_dashboard">
-        <div>
-            <img class="img1_main" src="./Images/group-working.gif" alt="" >
-           
-        </div>
-        <div id="main_img_info">
-            <a href="">
-            <div class="div_img_info">
-                <img class="img_info" src="./Images/video-call.gif" alt="">
-                <p>Video Call</p>
-            </div>
+      <div>
+        <img class="img1_main" src="./Images/group-working.gif" alt="" />
+      </div>
+      <div id="main_img_info">
+        <a href="../backend/features/video/video-sharing-frontend/index.html">
+          <div class="div_img_info">
+            <img class="img_info" src="./Images/video-call.gif" alt="" />
+            <p>Video Call</p>
+          </div>
         </a>
         <a href="../backend/features/screenshare/index.html">
-            <div class="div_img_info">
-                <img  class="img_info"src="./Images/screen-share.gif" alt="">
-                <p>Screen Share</p>
-            </div></a>
-            <a href="">
-            <div class="div_img_info">
-                <img class="img_info" src="./Images/msg.gif" alt="">
-                <p>Message</p>
-            </div>
-            </a>
-            <a href="">
-            <div class="div_img_info">
-                <img class="img_info" src="./Images/connect.gif" alt="">
-                <p>Connect</p>
-            </div>
-
+          <div class="div_img_info">
+            <img class="img_info" src="./Images/screen-share.gif" alt="" />
+            <p>Screen Share</p>
+          </div></a
+        >
+        <a href="../backend/features/messages/public/message.html">
+          <div class="div_img_info">
+            <img class="img_info" src="./Images/msg.gif" alt="" />
+            <p>Message</p>
+          </div>
         </a>
-        </div>
+        <a href="../backend/features/video/video-sharing-frontend/index.html">
+          <div class="div_img_info">
+            <img class="img_info" src="./Images/connect.gif" alt="" />
+            <p>Connect</p>
+          </div>
+        </a>
+      </div>
     </div>
-    <footer>
-
-    </footer>
-</body>
+    <footer></footer>
+  </body>
 </html>
 <script>
-let ham = document.getElementById("hamburger");
-ham.addEventListener("click",function(){
-  this.classList.toggle("is-active");
-  if (this.classList.contains('is-active')){
-    openNav();
-  } else {
-    closeNav();
+  let ham = document.getElementById("hamburger");
+  ham.addEventListener("click", function () {
+    this.classList.toggle("is-active");
+    if (this.classList.contains("is-active")) {
+      openNav();
+    } else {
+      closeNav();
+    }
+  });
+  function openNav() {
+    console.log("open");
+    document.getElementById("burger").style.display = "initial";
+    document.getElementById("burger").style.transition =
+      "transform 250ms ease-in-out";
   }
-
-})
-function openNav(){
-  console.log("open");
-  document.getElementById("burger").style.display = "initial";
-  document.getElementById("burger").style.transition = "transform 250ms ease-in-out"
-}
-function closeNav(){
-  console.log("close nav")
-  document.getElementById("burger").style.display = "none";
-}
-
-
+  function closeNav() {
+    console.log("close nav");
+    document.getElementById("burger").style.display = "none";
+  }
 </script>
