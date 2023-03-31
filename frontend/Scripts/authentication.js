@@ -39,7 +39,6 @@ signbtn.addEventListener("click", (e) => {
 });
 
 // login script is  start hare
-var flag = false;
 let login = document.getElementById("login-form");
 
 login.addEventListener("submit", (e) => {
@@ -62,15 +61,17 @@ login.addEventListener("submit", (e) => {
     .then((res) => res.json())
 
     .then((res) => {
-      console.log(res);
 
       let lemail = (document.getElementById("lemail").value = "");
       let lpass = (document.getElementById("lpass").value = "");
-      flag = true;
 
-      if (flag) {
+      
+
+      if (res.ok) {
         alert("done");
         window.location.href = "./dashboard.html";
+      } else {
+        alert(`${res.mes}`);
       }
     })
     .catch((err) => {

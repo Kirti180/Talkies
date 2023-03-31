@@ -36,33 +36,33 @@ authRoute.get("/github",async (req,res)=>{
 
 
 
-passport.use(new GoogleStrategy({
-    clientID: process.env.GOOGLE_CLIENT_ID,
-    clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-    callbackURL: "https://talkies-authentication-server-1.onrender.com/auth/google/callback"
-  },
-  function(accessToken, refreshToken, profile, cb) {
-    // User.findOrCreate({ googleId: profile.id }, function (err, user) {
-    //   return cb(err, user);
-    // });
-    console.log(profile)
-  }
+// passport.use(new GoogleStrategy({
+//     clientID: process.env.GOOGLE_CLIENT_ID,
+//     clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+//     callbackURL: "https://talkies-authentication-server-1.onrender.com/auth/google/callback"
+//   },
+//   function(accessToken, refreshToken, profile, cb) {
+//     // User.findOrCreate({ googleId: profile.id }, function (err, user) {
+//     //   return cb(err, user);
+//     // });
+//     console.log(profile)
+//   }
 
-));
-
-
-app.get('/auth/google',passport.authenticate('google', { scope: ['profile',"email"] }));
-
-app.get('/auth/google/callback',passport.authenticate('google', { failureRedirect: '/login' }),
-    function (req, res) {
-        // Successful authentication, redirect home.
-        res.redirect('/');
-});
+// ));
 
 
-module.exports={
-    passport
-}
+// app.get('/auth/google',passport.authenticate('google', { scope: ['profile',"email"] }));
+
+// app.get('/auth/google/callback',passport.authenticate('google', { failureRedirect: '/login' }),
+//     function (req, res) {
+//         // Successful authentication, redirect home.
+//         res.redirect('/');
+// });
+
+
+// module.exports={
+//     passport
+// }
 
 
 module.exports = {
