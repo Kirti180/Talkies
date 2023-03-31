@@ -1,0 +1,95 @@
+body {
+    background-color: #FAFAFA;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+#logo {
+    width: 100%;
+}
+
+#logoDiv {
+    width: 12%;
+    margin: auto;
+    margin-top: 25px;
+    /* border: 1px solid wheat; */
+}
+
+
+#videoDiv {
+    display: grid;
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    gap: 5px;
+    place-items: center;
+    /* border: 1px solid white; */
+}
+
+video {
+    width: 99%;
+    height: 99%;
+    object-fit: cover;
+    border: 2px solid #a7a1a1;
+    border-radius: 2%;
+}
+
+#controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.icon {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+#hide-audio {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 100%;
+    padding: 8px;
+    margin: 10px;
+    margin-top: 40px;
+    border: 1px solid #a7a1a1;
+}
+#hide-video {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 100%;
+    padding: 8px;
+    margin: 10px;
+    margin-top: 40px;
+    border: 1px solid #a7a1a1;
+}
+#hangup {
+    background-color: white;
+    border-radius: 100%;
+    padding: 8px;
+    margin-top: 40px;
+    border: 1px solid #a7a1a1;
+}
+
+#hangup:hover, #hide-audio:hover, #hide-video:hover{
+    background-color: #eeebeb;
+}
+
+h1{
+    color: black;
+    text-align: center;
+}
+
+#logoDiv{
+    width: 20%;
+    margin: auto;
+}

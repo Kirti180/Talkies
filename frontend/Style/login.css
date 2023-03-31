@@ -2,9 +2,17 @@
 #main-div{
     width: 90%;
     display: flex;
-	margin: auto;
+	justify-content: space-around;
+	
 }
+/* #main-div>div:nth-child(1){
+	width: 45%;
 
+}
+#main-div>div:nth-child(2){
+	width: 55%;
+
+} */
 #img{
 	margin-top: 80px;
     width: 900px;
@@ -31,8 +39,8 @@ img{
 
 #google{
 	background-color: #fff;
-	padding-left:60px ;
-	margin: 20px 80px;
+	padding-left:26px ;
+	margin: 20px 85px;
 	padding-bottom: 10px;
 	border-radius: 6px;
 	box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
@@ -79,16 +87,16 @@ body{
 }
 .main{
 
-	margin-top: 40%;
-	width: 400px;
-	height: 550px;
+	margin-top: 20%;
+	width: 440px;
+	height: 600px;
 	background: red;
 	overflow: hidden;
 	background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38") no-repeat center/ cover;
 	border-radius: 10px;
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;	background: #2d90ec;
-	/* padding: 10px; */
-	/* margin: 10px; */
+	box-shadow: 5px 20px 50px #000;
+	background: #2d90ec;
+	border: 1px solid red;
 }
 #chk{
 	display: none;
@@ -97,6 +105,7 @@ body{
 	position: relative;
 	width:100%;
 	height: 100%;
+	border: 1px solid red;
 }
 label{
 	color: #fff;
@@ -160,6 +169,7 @@ button:hover{
 }
 #chk:checked ~ .signup label{
 	transform: scale(.6);
+
 }
 @media(max-width: 1350px){
 
@@ -330,6 +340,8 @@ button:hover{
 
 .navbar{
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+	padding: 4px;
+	margin: 4px;
     position: fixed;
     width: 100%;
 	background: #fff;
@@ -351,14 +363,29 @@ button:hover{
 }
 .logo{
 	width: 170px;
+
     /* order: 1; */
     /* font-size: 2.3rem; */
+}
+.logo:hover{
+	cursor: pointer;
+	background-color: #b5d0f8;
+	border-radius: 10px;
+	padding: 3px;
 }
 
 .menu-items li{
     list-style: none;
     margin-left: 1.5rem;
     font-size: 1.3rem;
+	padding: 4px 8px;
+	margin: 4px 8px;
+}
+.menu-items li:hover{
+	background-color: #b5d0f8;
+	border-radius: 10px;
+	
+	
 }
 
 .navbar a{

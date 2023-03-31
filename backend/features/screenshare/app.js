@@ -1,4 +1,4 @@
-const PRE = "Talkies"
+const PRE = "Room ID is"
 const SUF = ""
 
 var room_id;
@@ -16,6 +16,8 @@ var screenSharing = false;
 function createRoom() {
     console.log("Room has been created")
     const room = document.getElementById("room-input").value;
+//     const urlParams = new URLSearchParams(window.location.search);
+// const roomID = urlParams.get('roomID');
 
     // check room should not empty.
     if (room == " " || room == " ") {
