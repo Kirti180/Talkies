@@ -75,10 +75,10 @@
       </div>
     </nav>
     <div id="burger">
-      <div class="burger_inside">Video Call</div>
-      <div class="burger_inside">Screen Share</div>
-      <div class="burger_inside">Message</div>
-      <div class="burger_inside">Home</div>
+      <div class="burger_inside" id="vc">Video Call</div>
+      <div class="burger_inside" id="ss">Screen Share</div>
+      <div class="burger_inside" id="msg">Message</div>
+      <div class="burger_inside" id="hm">Home</div>
     </div>
 
     <br /><br />
@@ -119,6 +119,22 @@
 </html>
 <script>
   let ham = document.getElementById("hamburger");
+  let screenshare = document.getElementById("ss");
+  let videocall = document.getElementById("vc");
+  let message = document.getElementById("msg");
+  let home = document.getElementById("hm");
+  videocall.addEventListener("click",()=>{
+    window.location.href="../backend/features/video/video-sharing-frontend/index.html"
+  })
+  screenshare.addEventListener("click",()=>{
+    window.location.href="../backend/features/video/video-sharing-frontend/index.html"
+  })
+  message.addEventListener("click",()=>{
+    window.location.href="../backend/features/video/video-sharing-frontend/index.html"
+  })
+  home.addEventListener("click",()=>{
+    window.location.href="./index.html"
+  })
   ham.addEventListener("click", function () {
     this.classList.toggle("is-active");
     if (this.classList.contains("is-active")) {
