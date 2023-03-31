@@ -160,6 +160,7 @@ button:hover{
 }
 #chk:checked ~ .signup label{
 	transform: scale(.6);
+
 }
 @media(max-width: 1350px){
 
