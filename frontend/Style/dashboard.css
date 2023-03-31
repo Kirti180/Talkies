@@ -70,7 +70,7 @@ nav {
 #nav_left_side > div > i {
   color:  #00053d;
   margin-right: 7px;
-  font-size: 21px;
+  font-size: 20px;
 }
 
 #burger {
@@ -127,6 +127,12 @@ nav {
     position: sticky;
     top: 0;
   }
+  .indexstyle {
+    text-decoration: none;
+    color:  #00053d;
+    font-size: 18px;
+    /* margin-left: 2%; */
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -149,6 +155,12 @@ nav {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+  }
+  .indexstyle {
+    text-decoration: none;
+    color:  #00053d;
+    font-size: 16px;
+    /* margin-left: 2%; */
   }
 }
 
@@ -190,8 +202,8 @@ nav {
   font-size: bolder;
   text-decoration: none;
   text-align: center;
-
-  padding-bottom: 12%;
+  padding-top: 6%;
+  padding-bottom: 6%;
 }
 .div_img_info:hover {
   transform: scale(1.1);
