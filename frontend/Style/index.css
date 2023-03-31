@@ -22,7 +22,7 @@ main{
     height: auto;
     margin-bottom: 40px;
     display: flex;
-    margin-top: 30px;
+    margin-top: 120px;
     /* border: 1px solid yellow; */
     justify-content: space-between;
     color: #00053d;
@@ -258,6 +258,7 @@ main{
 }
 
 @media (max-width:920px) {
+
     #section_1 {
         flex-direction: column;
         gap: 3%;
@@ -291,6 +292,9 @@ main{
 }
 
 @media (max-width:620px) {
+    #section_4_child{
+        display: none;
+    }
     #section_1_child {
         grid-template-columns: repeat(2, 1fr);
         row-gap: 15px;
