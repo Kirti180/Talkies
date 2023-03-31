@@ -51,7 +51,7 @@ userrouter.post("/login", async (req, res) => {
     const user = await usermodel.findOne({ email });
     
     if (!user) {
-      res.send({ mes: "user not found" });
+      res.send({"ok":false, mes: "user not found" });
     } else {
       bcrypt.compare(password, user.password, (err, result) => {
         if (result) {
@@ -61,12 +61,13 @@ userrouter.post("/login", async (req, res) => {
 
 
           res.send({
+            "ok":true,
             "mes": "login successfully",
             "user_details":{name:user[0].name,email:user[0].email},
             "token": token         
           });
         } else {
-          res.send("somthing went wrong data");
+          res.send({"ok":false, "mes":"Wrong credentials"});
         }
       });
     }
