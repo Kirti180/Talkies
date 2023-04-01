@@ -77,7 +77,7 @@ authRoute.get(
     failureRedirect: "/auth/google/failure",
   })
 );
-
+// testing OAUTH
 // app.get('/auth/google',passport.authenticate('google', { scope: ['profile',"email"] }));
 
 // app.get('/auth/google/callback',passport.authenticate('google', { failureRedirect: '/login' }),
