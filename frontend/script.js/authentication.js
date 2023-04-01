@@ -1,5 +1,6 @@
 const url = "https://talkies-authentication-server-1.onrender.com";
-let signbtn = document.getElementById("signbtn");
+
+let signbtn = document.getElementById("btn");
 
 signbtn.addEventListener("click", (e) => {
   e.preventDefault();
@@ -11,7 +12,7 @@ signbtn.addEventListener("click", (e) => {
     email: email,
     password: pass,
   };
-  console.log(signdata);
+  // console.log(signdata);
   fetch(`${url}/user/sign`, {
     method: "POST",
     body: JSON.stringify(signdata),
@@ -39,6 +40,7 @@ signbtn.addEventListener("click", (e) => {
 });
 
 // login script is  start hare
+
 var flag = false;
 let login = document.getElementById("login-form");
 
@@ -51,7 +53,7 @@ login.addEventListener("submit", (e) => {
     email: lemail,
     password: lpass,
   };
-  console.log(signdata);
+  // console.log(signdata);
   fetch(`${url}/user/login`, {
     method: "POST",
     body: JSON.stringify(signdata),
