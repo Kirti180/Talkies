@@ -12,34 +12,32 @@ login.addEventListener("submit", (e) => {
     email: lemail,
     password: lpass,
   };
-  console.log(signdata);
+
+
   fetch(`${url}/user/login`, {
     method: "POST",
-    body: JSON.stringify(signdata),
     headers: {
       "Content-type": "application/json",
     },
+    body: JSON.stringify(signdata),
   })
     .then((res) => res.json())
 
     .then((res) => {
 
-      let lemail = (document.getElementById("lemail").value = "");
-      let lpass = (document.getElementById("lpass").value = "");
-
-      
-
+      document.getElementById("lemail").value = "";
+      document.getElementById("lpass").value = "";
       if (res.ok) {
-        alert("done");
+        alert("Login Successfull");
+        localStorage.setItem("userDetails", JSON.stringify(res.user_details));
+        localStorage.setItem("token", res.token);
         window.location.href = "./dashboard.html";
       } else {
-        alert(`${res.mes}`);
+        alert(`${res.msg}`);
       }
     })
     .catch((err) => {
       console.log(err);
-      // alert(err.res)
-      let lemail = (document.getElementById("lemail").value = "");
-      let lpass = (document.getElementById("lpass").value = "");
+      alert("Something went wrong")
     });
 });
