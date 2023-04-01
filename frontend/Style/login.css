@@ -49,6 +49,7 @@ img{
 input:focus {
 	outline: none;
 }
+
 .left h3{
   text-align: center;
   margin-bottom: 40px;
@@ -132,4 +133,19 @@ input:focus {
 	justify-content: space-between;
 }
 
-
+#login{
+  border: none;
+	/* text-decoration-line: none; */
+    padding: 15px 0px;
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+    width: 180px;
+    margin-top: 120px;
+    background: #0657cf;
+    color: #fff;
+    font-weight: bold;
+    -webkit-box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+    -moz-box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+    box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+}
