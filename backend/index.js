@@ -16,7 +16,7 @@ require("dotenv").config();
 app.get("/", (req, res) => {
      res.send("wlc to home page")
 })
-
+app.use("/", authRoute);
 app.use("/user", userrouter)
 
 app.listen(process.env.port, async () => {
