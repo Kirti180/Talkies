@@ -1,13 +1,23 @@
 # befitting-harbor-9010
+# Real Time Screen Sharing cum Chat Application
 ![logo](https://user-images.githubusercontent.com/114337213/228550899-b8c32e8b-a152-4313-b5e6-d517a9417d33.jpeg)
 
-Reatime screen sharing web application..
+**The power of collaboration is that it can turn a group of individuals into a team empowered to achieve great things
+Talkies is a type of application that enables users to share their computer screens with others in real-time over the internet. 
+It includes features that allows user to chat, video call, screen share with each other.**
 
 ## Tech Stack
 
-**Client:** HTML,CSS, Javascript,Bootsrap
+**Client:** HTML | CSS | Javascript | Bootsrap | External CSS library
 
-**Server:** Node.js, Express.js , MongoDB, WebRTC, PeerJS library, Socket.io
+**Server:** Node.js | Express.js | MongoDB | WebRTC | PeerJS library | Socket.io | Bcrypt | PassPort | cors
+
+**github:** To maintain repository and collabration
+
+**VS Code:** To write HTML,CSS and JavaScript code.
+
+**Microsoft Edge,Google Chrome & Mozilla Firefox:** To check the functionality and run the code.
+
 ## Frontend Part
 
 - Home page
