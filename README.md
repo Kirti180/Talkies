@@ -112,4 +112,4 @@ It includes features that allows user to chat, video call, screen share with eac
 <br>
 
 System_design
-![Untitled Diagram](https://user-images.githubusercontent.com/87657007/225451422-8d5c05ca-5046-4c10-b890-1f02bbcd3d73.jpg)
+![work-flow](https://user-images.githubusercontent.com/115463536/229331910-ba9200c8-7d65-4c98-b4a1-3f921088107b.jpg)
