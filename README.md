@@ -1,19 +1,20 @@
-# befitting-harbor-9010
-# Real Time Screen Sharing cum Chat Application
-![logo](https://user-images.githubusercontent.com/114337213/228550899-b8c32e8b-a152-4313-b5e6-d517a9417d33.jpeg)
+![icon](https://user-images.githubusercontent.com/112820391/229345379-104d7a8e-6fb3-4c47-b760-8a6acf5f3d97.png)
 
+# Talkies - Real Time Screen Sharing  Chat Application
+
+**Takies is a communications platform that allows users to connect with video, audio, screen share, and chat.**
 **The power of collaboration is that it can turn a group of individuals into a team empowered to achieve great things
 Talkies is a type of application that enables users to share their computer screens with others in real-time over the internet. 
 It includes features that allows user to chat, video call, screen share with each other.**
-# Talkies 
+
 
 ## Tech Stack
 
 **Client:** HTML | CSS | Javascript | Bootsrap | External CSS library
 
-**Server:** Node.js | Express.js | MongoDB | WebRTC | PeerJS library | Socket.io | Bcrypt | PassPort | cors
+**Server:** Node.js | Express.js | MongoDB | WebRTC | PeerJS library | Socket.io | Bcrypt | PassPort | cors | Redis | JWT
 
-**github:** To maintain repository and collabration
+**github:** To maintain repository and collabration and version control.
 
 **VS Code:** To write HTML,CSS and JavaScript code.
 
@@ -29,24 +30,24 @@ It includes features that allows user to chat, video call, screen share with eac
 
 ## Backend Part
 - Authentication using JWT
-- Mongoose - connecting the database
-- Server side -->> Node.js and Express 
+- implementation using Socket.io
+- fully functional Video, Audio and Screen Share icons
 - 
 ## Database  
  - MongoDB
+ - Redis
 
 ## Features 
  -  Screen Sharing 
  -  Chatting 
- -  Vedio calling
+ -  Video Calling
 
- ## Application Guide
-
+ ## Application Guide to use features
 
  ### To use {Screen share} feature -->
 -  First Create room 
 -  User can share the screen
--  Than user can join the room using room ID
+-  User can join the room using room ID
 -  Enter room ID to join 
 
 #### Stop share -->
@@ -111,5 +112,6 @@ It includes features that allows user to chat, video call, screen share with eac
 
 <br>
 
-System_design
+## Complete Work-flow of Talkies
+
 ![work-flow](https://user-images.githubusercontent.com/115463536/229331910-ba9200c8-7d65-4c98-b4a1-3f921088107b.jpg)
