@@ -46,7 +46,10 @@ Reatime screen sharing web application..
 -  To end the call click on hang on button
 
 ### To use {Chat} feature -->
--  
+-  First Create room
+-  User can join the room using room ID after login
+-  Time is displayed of message
+-  Notifies User info
 
 
 ## Examples
@@ -68,6 +71,30 @@ Reatime screen sharing web application..
     })
 ```
 
+## Group Members Info
+1. Kirti Shinde(Team Lead)
+   >    - e-Mail: lluvporwall@gmail.com
+   >    - GitHub: https://github.com/love-porwal 
+
+
+2. Love Porwal
+   >    - e-Mail: lluvporwall@gmail.com
+   >    - GitHub: https://github.com/love-porwal 
+
+
+3. Rishab Kumar Chaurasiya
+   >    - e-Mail: rkc3660@gmail.com
+   >    - GitHub: https://github.com/git-rishab
+
+
+4. Pankaj Jain
+   >    - e-Mail: lluvporwall@gmail.com
+   >    - GitHub: https://github.com/pankubhaiya 
+
+
+5. Veeresh S P
+   >    - e-Mail: lluvporwall@gmail.com
+   >    - GitHub: https://github.com/Veeresh-S-P 
 
 <br>
 
