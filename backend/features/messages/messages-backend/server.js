@@ -16,6 +16,9 @@ const server = http.createServer(app);
 const io = socketio(server);
 
 // const defaultNPS = io.of("/");
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('./swagger.yaml');
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 io.on("connection", (socket) => {
   console.log("One user has joined");
