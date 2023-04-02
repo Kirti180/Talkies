@@ -8,6 +8,18 @@ Reatime screen sharing web application..
 **Client:** HTML,CSS, Javascript,Bootsrap
 
 **Server:** Node.js, Express.js , MongoDB, WebRTC, PeerJS library, Socket.io
+## Frontend Part
+
+- Home page
+- Login/Signup
+- Dashboard
+- Google OAuth 
+- Github OAuth
+
+## Backend Part
+- Authentication using JWT
+- Mongoose - connecting the database
+- Server side -->> Node.js and Express 
 ### Database - 
     - MongoDB
 
@@ -15,6 +27,10 @@ Reatime screen sharing web application..
  -  Screen Sharing 
  -  Chatting 
  -  Vedio calling
+
+ ## Application Guide
+
+
  ### To use {Screen share} feature -->
 -  First Create room 
 -  User can share the screen
@@ -28,6 +44,31 @@ Reatime screen sharing web application..
 -  First Create room 
 -  User can join the call by using the room ID
 -  To end the call click on hang on button
+
+### To use {Chat} feature -->
+-  
+
+
+## Examples
+ #### Creating connection and accessing user media .
+```javascript
+    peer = new Peer(room_id);
+    peer.on('open', (id) => {
+        console.log("Peer has joined ID no", id);
+        hideModal()
+        // media options...
+        getUserMedia({ video: true, audio: true },
+            (stream) => {
+                local_stream = stream;
+                setLocalStream(local_stream)
+            }, (err) => {
+                console.log(err);
+            })
+        notify("Waiting for the member to join.")
+    })
+```
+
+
 <br>
 
 System_design
