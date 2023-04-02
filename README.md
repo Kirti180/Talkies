@@ -32,7 +32,7 @@ It includes features that allows user to chat, video call, screen share with eac
 - Authentication using JWT
 - implementation using Socket.io
 - fully functional Video, Audio and Screen Share icons
-- 
+
 ## Database  
  - MongoDB
  - Redis
