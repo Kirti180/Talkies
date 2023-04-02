@@ -72,9 +72,10 @@ Reatime screen sharing web application..
 ```
 
 ## Group Members Info
+
 1. Kirti Shinde(Team Lead)
-   >    - e-Mail: lluvporwall@gmail.com
-   >    - GitHub: https://github.com/love-porwal 
+   >    - e-Mail: kirti182001@gmail.com
+   >    - GitHub: https://github.com/Kirti180
 
 
 2. Love Porwal
@@ -88,12 +89,12 @@ Reatime screen sharing web application..
 
 
 4. Pankaj Jain
-   >    - e-Mail: lluvporwall@gmail.com
+   >    - e-Mail: pj9009815223@gmail.com
    >    - GitHub: https://github.com/pankubhaiya 
 
 
 5. Veeresh S P
-   >    - e-Mail: lluvporwall@gmail.com
+   >    - e-Mail: veereshsp1234@gmail.com
    >    - GitHub: https://github.com/Veeresh-S-P 
 
 <br>
