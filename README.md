@@ -5,6 +5,7 @@
 **The power of collaboration is that it can turn a group of individuals into a team empowered to achieve great things
 Talkies is a type of application that enables users to share their computer screens with others in real-time over the internet. 
 It includes features that allows user to chat, video call, screen share with each other.**
+# Talkies 
 
 ## Tech Stack
 
@@ -30,8 +31,9 @@ It includes features that allows user to chat, video call, screen share with eac
 - Authentication using JWT
 - Mongoose - connecting the database
 - Server side -->> Node.js and Express 
-### Database - 
-    - MongoDB
+- 
+## Database  
+ - MongoDB
 
 ## Features 
  -  Screen Sharing 
