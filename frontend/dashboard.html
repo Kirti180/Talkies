@@ -65,10 +65,10 @@
         <div>
           <i class="fa-solid fa-user fa-xl"></i
           ><span
-            ><a
+            ><a id="name-user"
               href="#"
               class="indexstyle"
-              >Name</a
+              ></a
             >
           </span>
         </div>
@@ -108,8 +108,8 @@
         </a>
         <a href="../backend/features/video/video-sharing-frontend/index.html">
           <div class="div_img_info">
-            <img class="img_info" src="./Images/connect.gif" alt="" />
-            <p>Connect</p>
+            <img class="img_info" src="./Images/logout.gif" alt="" />
+            <p>Logout</p>
           </div>
         </a>
       </div>
@@ -123,6 +123,9 @@
   let videocall = document.getElementById("vc");
   let message = document.getElementById("msg");
   let home = document.getElementById("hm");
+  let user_name=document.getElementById("name-user")
+  let name=localStorage.getItem("userDetails")
+  user_name.innerText= "Hey "+ name.name
   videocall.addEventListener("click",()=>{
     window.location.href="../backend/features/video/video-sharing-frontend/index.html"
   })
