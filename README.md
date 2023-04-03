@@ -7,6 +7,7 @@
 Talkies is a type of application that enables users to share their computer screens with others in real-time over the internet. 
 It includes features that allows user to chat, video call, screen share with each other.**
 
+## Deployment Link - https://talkies-lets-connect.netlify.app/
 
 ## Tech Stack
 
