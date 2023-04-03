@@ -15,13 +15,12 @@ width: 80%;
     top: 0px;
     /* border: 1px solid blue; */
     display: flex;
-    justify-content: space-evenly;
     gap: 3%;
     margin: auto;
     align-items: center;
     /* margin-top: 0%; */
-    padding: 3px 20px;
-    height: 60px;
+    padding: 10px 20px;
+    
     margin: 0px 0px;
    
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
@@ -39,15 +38,15 @@ width: 80%;
     /* border: 1px solid rgb(24, 184, 59); */
     width: 12%;
     cursor: pointer;
-    padding: 4px;
+    padding: 5px;
     border-radius: 10px;
 }
 
-/* #navBar div:nth-child(1):hover {
+#navBar div:nth-child(1):hover {
     
     background-color: #b5d0f8;
     box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
-} */
+}
 
 #navBar div:nth-child(2) {
     /* border: 1px solid rgb(24, 184, 59); */
@@ -57,7 +56,7 @@ width: 80%;
 #navBar div:nth-child(2) li,
 #navBar div:nth-child(3) li {
     cursor: pointer;
-    padding: 8px;
+    padding: 10px;
     border-radius: 10px;
 
 }
@@ -115,13 +114,12 @@ img {
     /* border: 1px solid rgb(231, 173, 14); */
 }
 @media (max-width:1000px) {
-  
     #navBar div:nth-child(2){
         display: none;
         justify-content: space-around;
     }
     #navBar {
-        width: 100%;
+
         /* flex-direction: column; */
         padding: 0px;
         display: flex;
@@ -130,9 +128,7 @@ img {
 }
 
 @media (max-width:920px) {
-  
     #navBar {
-        width: 100%;
         /* padding: 0px; */
         /* flex-direction: column; */
         display: flex;

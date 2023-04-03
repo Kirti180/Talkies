@@ -1,21 +1,11 @@
 #check {
-    display: flex; 
+    display: flex;
     gap: 1%;
-    justify-content: space-evenly;
-}
-
-
-#banner {
-    /* border: 1px solid red; */
-    width: 100%;
-    height: 550px;
-    margin-top: 28px;
-    margin-bottom: -50px;
 }
 
 body {
     font-style: sans-serif;
-   
+
 }
 
 * {
@@ -36,8 +26,6 @@ main{
     /* border: 1px solid yellow; */
     justify-content: space-between;
     color: #00053d;
-    /* background-color: rgb(49,117,255); */
-    padding: 25px;
 
 }
 
@@ -81,11 +69,11 @@ main{
     padding: 40px 20px;
     margin: 20px;
     background-color: rgb(49,117,255);
-    margin-bottom: 15px;
+    margin-bottom: 0px;
 }
 
 #section_2 h1 {
-    color: #0c1368;
+    color: #00053d;
     padding-top: 60px;
     padding: 15px;
     /* border: 1px solid black; */
@@ -94,7 +82,7 @@ main{
 #section_2>div>button {
     margin: 30px;
     gap: 200px;
-    background-color: #97a0ee;
+    background-color: #0657cf;
     /* border: 1px solid black; */
     /* color: rgb(0,35,71); */
 }
@@ -202,7 +190,6 @@ main{
     padding: 30px;
     border-left: 3px solid #010813;
     border-radius: 10px;
-    background-color: #fff;
 }
 
 #section_5_child div:hover {
@@ -218,7 +205,7 @@ main{
     /* border: 1px solid rgb(248, 42, 42); */
     display: grid;
     gap: 5%;
-    margin: 5px 10px;
+    margin: 0px 10px;
     padding: 0px 10px;
     height: auto;
     margin-bottom: 40px;
@@ -269,60 +256,13 @@ main{
 #section_8 #image {
     width: 70%;
 }
-@media (max-width:1220px) {
-      
-    #signup-box{
-        display: block;
-   
-   }
-   
-   #logout-box{
-       display: none;
-       justify-content: space-evenly;
-       
-   }
-   #logout-box span{
-     margin-left:5px;
-       cursor: pointer;
-   }
-}
-@media (max-width:1120px) {
-    #banner {
-       display: none;
-    
-    }
 
-    
-    #signup-box{
-        display: block;
-   
-   }
-   
-   #logout-box{
-       display: none;
-       justify-content: space-evenly;
-       
-   }
-   #logout-box span{
-     margin-left:10px;
-       cursor: pointer;
-   }
-}
 @media (max-width:920px) {
-    #banner {
-        display: none;
-     
-     }
-   
+
     #section_1 {
         flex-direction: column;
         gap: 3%;
         row-gap: 15px;
-    }
-    #section_1>div:nth-child(1) {
-        width: 100%;
-        /* margin: auto; */
-        /* border: 1px solid yellow; */
     }
     #section_2>div{
         display: grid;
@@ -349,28 +289,9 @@ main{
     #section_9 {
         grid-template-columns: repeat(1, 1fr);
     }
-
-    #signup-box{
-        display: block;
-   
-   }
-   
-   #logout-box{
-       display: none;
-       justify-content: space-evenly;
-       
-   }
-   #logout-box span{
-     margin-left:10px;
-       cursor: pointer;
-   }
 }
 
 @media (max-width:620px) {
-    #banner {
-        display: none;
-     
-     }
     #section_4_child{
         display: none;
     }
@@ -403,40 +324,5 @@ main{
     #section_9 {
         grid-template-columns: repeat(1, 1fr);
     }
-
-    #signup-box{
-        display: block;
-   
-   }
-   
-   #logout-box{
-       display: none;
-       justify-content: space-evenly;
-       
-   }
-   #logout-box span{
-     margin-left:10px;
-       cursor: pointer;
-   }
-
-}
-#signup-box{
-     display: block;
-
 }
 
-#logout-box{
-    display: none;
-    justify-content: space-evenly;
-    
-}
-#logout-box span{
-  margin-left:10px;
-    cursor: pointer;
-    padding: 5px;
-}
-
-#logout-box span:hover{
-    background-color: #b5d0f8;
-    border-radius: 6px;
-}
