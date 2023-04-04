@@ -2,7 +2,20 @@ body {
     margin: 0;
     font-family: sans-serif;
   }
-  
+  .bottom-two{
+    background-color: #00053d;
+    color: white;
+    padding: 3px;
+    border-radius: 6px;
+  }
+.top-two{
+  background-color: white;
+  color: #00053d;
+  font-size: 16px;
+  font-weight: bolder;
+  padding: 8px;
+  border-radius: 6px;
+}
   .titile {
     width: 100%;
     top: 0;
@@ -10,7 +23,7 @@ body {
     display: block;
   
     position: absolute;
-    background-color: cyan;
+    background-color: #00053d;
     color: white;
     text-align: center;
     margin: 0;
@@ -18,7 +31,7 @@ body {
   
   
   .entry-modal{
-    border: 1px solid #444444;
+    /* border: 1px solid #00053d; */
     width: 300px;
     margin: auto;
     z-index: 9999;
@@ -26,11 +39,14 @@ body {
     left: 50%;
     top: 70;
     margin-left: -150px;
-    padding: 5px;
+    padding: 8px;
+   
     color: #fff;
-    background-color: skyblue;
+    background-color: white;
     text-align: center;
     border-radius: 7px;
+    box-shadow: rgb(138, 176, 233) 0px -23px 25px 0px inset, rgba(203, 222, 250) 0px -36px 30px 0px inset, rgba(203, 222, 250) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    
   }
   
   /* .modelContainer {
@@ -49,7 +65,8 @@ body {
   } */
   .modelContainer > div {
     align-items: center;
-    height: 50vh;
+    height: 45vh;
+    width: 53vh;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     text-align: center;
@@ -66,7 +83,7 @@ body {
     top: 47.33px;
     font-size: 18pt;
     width: 100%;
-    background-color: rgb(62, 241, 241);
+    background-color: #00053d(241, 229, 62);
   }
   
   
@@ -80,7 +97,12 @@ body {
   }
   #room-input {
     padding: 5px;
-    width: 85%;
+    width: 95%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: 16px;
+    border: 1px solid #00053d;
+    border-radius: 6px;
   }
   .room-input{
     border: none;
@@ -88,6 +110,7 @@ body {
   }
   #control {
     /* border:2px solid rgb(8, 8, 6); */
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
   }
@@ -105,7 +128,7 @@ body {
     height: 100%;
     width: 100%;
     left: 0;
-    background-color: lightgray;
+    background-color: white;
     position: absolute;
   }
   
