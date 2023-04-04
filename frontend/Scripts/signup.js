@@ -6,6 +6,23 @@ signbtn.addEventListener("click", (e) => {
   let name = document.getElementById("name").value;
   let email = document.getElementById("email").value;
   let pass = document.getElementById("pass").value;
+<<<<<<< HEAD
+
+  if(!name || !pass || !email){
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "E-mail and Password can't be empty",
+    });
+    return;
+  }
+
+  // Loader Showing
+  showLoader();
+  document.getElementById("btn").style.visibility = "hidden";
+
+=======
+>>>>>>> 855eb2f26764dfe5e9f55f4ace67fc767ba31f5b
   let signdata = {
     name: name,
     email: email,
@@ -18,11 +35,51 @@ signbtn.addEventListener("click", (e) => {
     headers: {
       "Content-type": "application/json",
     },
+<<<<<<< HEAD
+  })
+    .then((res) => res.json())
+=======
   }).then((res) => res.json())
+>>>>>>> 855eb2f26764dfe5e9f55f4ace67fc767ba31f5b
     .then((res) => {
       document.getElementById("name").value = "";
       document.getElementById("email").value = "";
       document.getElementById("pass").value = "";
+<<<<<<< HEAD
+
+      if (res.ok) {
+        Swal.fire(
+            'Registration Successfull',
+            '',
+            'success'
+          )
+        // Transfer to login page here
+        setTimeout(()=>{
+          window.location.href = "./login.html";
+        },2500)
+      } else {
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: res.msg,
+        });
+
+        hideLoader();
+        document.getElementById("btn").style.visibility = "visible";
+      }
+    })
+    .catch((err) => {
+      console.log(err);
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: err.message,
+      });
+      hideLoader();
+      document.getElementById("btn").style.visibility = "visible";
+    });
+});
+=======
       
       if(res.ok){
         alert(res.msg);
@@ -36,3 +93,4 @@ signbtn.addEventListener("click", (e) => {
       console.log(err);
     });
 });
+>>>>>>> 855eb2f26764dfe5e9f55f4ace67fc767ba31f5b

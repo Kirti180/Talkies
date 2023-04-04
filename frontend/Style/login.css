@@ -1,5 +1,378 @@
 img{
 	width: 100%;
+<<<<<<< HEAD
+}
+.login {
+    height: 100vh;
+    width: 100%;
+    /* background:#0657cf; */
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(6,87,207,1) 35%, rgba(0,212,255,1) 100%);
+    position: relative;
+}
+
+.contact{
+	display: flex;
+	flex-direction: column;
+}
+
+
+.login_box {
+    width: 1050px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 4px 22px -8px #0004;
+    display: flex;
+    overflow: hidden;
+}
+.login_box .left{
+  width: 41%;
+  height: 100%;
+  padding: 25px 25px;
+  
+}
+.login_box .right{
+  width: 59%;
+  height: 100%  
+}
+.left .top_link a {
+    color: #452A5A;
+    font-weight: 400;
+}
+.left .top_link{
+  height: 20px
+}
+.left .contact{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    height: 100%;
+    width: 73%;
+    margin: auto;
+}
+input:focus {
+	outline: none;
+}
+
+.left h3{
+  text-align: center;
+  margin-bottom: 40px;
+}
+.left input {
+    border: none;
+    width: 80%;
+    margin: 15px 0px;
+    border-bottom: 1px solid #4f30677d;
+    padding: 7px 9px;
+    width: 100%;
+    overflow: hidden;
+    background: transparent;
+    font-weight: 600;
+    font-size: 14px;
+}
+.left{
+	background: linear-gradient(-45deg, #dcd7e0, #fff);
+}
+.submit {
+    border: none;
+	/* text-decoration-line: none; */
+    padding: 15px 70px;
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+	/* margin-bottom: 5px; */
+    margin-top: 10px;
+	background-color: #00053d;
+    border: 1px solid #b5d0f8;
+    color: #fff;
+    font-weight: bold;
+    -webkit-box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+    -moz-box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+    box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+}
+.submit:hover{
+	background-color: #b5d0f8;
+    cursor: pointer;
+	transition: 0.3s ease;
+}
+
+
+
+.right {
+	background: linear-gradient(212.38deg, rgba(48, 98, 236, 0.388) 0%, rgba(50, 62, 231, 0.71) 100%),url(https://static.seattletimes.com/wp-content/uploads/2019/01/web-typing-ergonomics-1020x680.jpg);
+	color: #fff;
+	position: relative;
+}
+
+.right .right-text{
+  height: 100%;
+  position: relative;
+  transform: translate(0%, 45%);
+}
+.right-text h2{
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+}
+.right-text h5{
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.right .right-inductor{
+  position: absolute;
+  width: 70px;
+  height: 7px;
+  background: #fff0;
+  left: 50%;
+  bottom: 70px;
+  transform: translate(-50%, 0%);
+}
+.top_link img {
+    width: 28px;
+    padding-right: 7px;
+    margin-top: -3px;
+}
+
+.return{
+	display: flex;
+	flex-direction: row;
+
+	justify-content: space-between;
+}
+
+#login{
+  border: none;
+	/* text-decoration-line: none; */
+    padding: 15px 0px;
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+    width: 180px;
+    margin-top: 10px;
+	margin-bottom: -40px;
+	background-color: #00053d;
+    border: 1px solid #b5d0f8;
+    color: #fff;
+    font-weight: bold;
+    -webkit-box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+    -moz-box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+    box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+}
+#login:hover{
+	background-color: #b5d0f8;
+    cursor: pointer;
+	transition: 0.3s ease;
+}
+#outh{
+	width: 160px;
+	/* height: 150px; */
+    /* margin-top: 50px; */
+    position: absolute;
+    top: 90%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+  
+    
+    display: flex;
+    overflow: hidden;
+}
+#outh a{
+	text-decoration: none;
+}
+#outh div{
+	/* margin-top: -40px; */
+    margin: 2px;
+	width: 90px;
+	margin: auto;
+	border-radius: 40px;
+	/* margin: 10px; */
+}
+#outh i:hover{
+	font-size: 45px;
+	transition: 0.2s ease;
+	cursor: pointer;
+}
+
+#outh img:hover{
+	width: 45px;
+	transition: 0.2s ease;
+	cursor: pointer;
+}
+#outh img{
+	width: 40px;
+	margin-top: 8px;
+	border-radius: 40px;
+	margin-left: 20px;
+
+}
+i{
+	font-size: 40px;
+	/* height: 20px; */
+	margin-top: 8px;
+	margin-right: 20px;
+	margin-left: 10px;
+}
+
+
+@media ( max-width:1220px) {
+	.login_box {
+		width: 1000px;
+		height: 600px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		background: #fff;
+		border-radius: 10px;
+		box-shadow: 1px 4px 22px -8px #0004;
+		display: flex;
+		overflow: hidden;
+	}
+	#outh{
+		left: 20%;
+	}
+
+	
+}
+
+
+@media (max-width:1120px) {
+	.login_box {
+		width: 900px;
+		height: 600px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		background: #fff;
+		border-radius: 10px;
+		box-shadow: 1px 4px 22px -8px #0004;
+		display: flex;
+		overflow: hidden;
+	}
+	#outh{
+		left: 20%;
+	}
+}
+
+@media (max-width:920px) {
+	.login_box {
+		width: 600px;
+		height: 600px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		background: #fff;
+		border-radius: 10px;
+		box-shadow: 1px 4px 22px -8px #0004;
+		display: flex;
+		overflow: hidden;
+		
+	
+	}
+	
+   .right{
+	display: none;
+   }
+   .login_box .left{
+	width: 100%;
+	height: 100%;
+	padding: 25px 25px;
+	
+  }
+  #outh{
+	left: 50%;
+}
+  
+}
+
+@media (max-width:620px) {
+	.login_box {
+		width: 350px;
+		height: 600px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		background: #fff;
+		border-radius: 10px;
+		box-shadow: 1px 4px 22px -8px #0004;
+		display: flex;
+		overflow: hidden;
+	}
+	
+   .right{
+	display: none;
+   }
+   .login_box .left{
+	width: 100%;
+	height: 100%;
+	padding: 25px 25px;
+	
+  }
+  #outh{
+	left: 50%;
+}
+}
+
+
+@media (max-width:320px) {
+	.login_box {
+		width: 200px;
+		height: 600px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		background: #fff;
+		border-radius: 10px;
+		box-shadow: 1px 4px 22px -8px #0004;
+		display: flex;
+		overflow: hidden;
+	}
+	
+   .right{
+	display: none;
+   }
+   .login_box .left{
+	width: 100%;
+	height: 100%;
+	padding: 25px 25px;
+	
+  }
+  #outh{
+	left: 50%;
+}
+
+.return{
+	flex-direction: column;
+	
+
+}
+.return div:nth-child(1){
+    margin-bottom: 7px;
+	
+}
+#outh{
+    top:90%;
+}
+
+
+}
+=======
 }
 .login {
     height: 100vh;
@@ -149,3 +522,4 @@ input:focus {
     -moz-box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
     box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
 }
+>>>>>>> 855eb2f26764dfe5e9f55f4ace67fc767ba31f5b

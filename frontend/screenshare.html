@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./Images/fav_icon-bg.png" />
+    <title>Talkies | Share Screen</title>
+  
+    <link rel="stylesheet" href="./Style/screenshare.css" />
+    <script src="https://unpkg.com/peerjs@1.3.2/dist/peerjs.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Loader -->
+    <script src="./Scripts/notification.js"></script>
+    <link rel="stylesheet" href="./Style/notification.css">
+    <!----------------->
+
+  </head>
+  <body>
+    <div id="logoDiv">
+      <img id="logo" src="./Images/logo.png" alt="icon" />
+    </div>
+
+    <h1 id="roomID"></h1>
+    <div id="videoDiv"></div>
+
+    <!-- <div id="controls">
+      <p id="hangup">
+        <a href="./index.html"
+          ><img
+            class="icon"
+            src="https://icons.veryicon.com/png/o/miscellaneous/cloud-call-center/hang-up.png"
+            alt=""
+        /></a>
+        <p id="hide-video" class="icon-color"><img width="50px"  class="icon" src="./images/cam.png" alt=""></p>
+        <p id="hide-audio" class="icon-color"><img  class="icon" src="./images/mike.png" alt=""></p>
+      </p>
+      
+    </div> -->
+    <div class="meet-area">
+      <!--There are Video elements  -->
+      <video id="remote-video"></video>
+
+      <!--There will we local video elements  -->
+
+      <video id="local-video"></video>
+      <div class="meet-controls-bar">
+        <button type="button" class="btn btn-warning"  onclick="startScreenShare()">Start Share</button>
+        <button type="button" class="btn btn-warning"  onclick="stopScreenSharing()">Stop Share</button>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script
+  src="https://cdn.socket.io/4.5.4/socket.io.min.js"
+  integrity="sha384-/KNQL8Nu5gCHLqwqfQjA689Hhoqgi2S84SNUxC3roTe4EhJ9AfLkp8QiQcU8AMzI"
+  crossorigin="anonymous"
+></script>
+
+<!-- <script src="./Scripts/videochat.js"></script> -->
+<script src="./Scripts/screenshare.js"></script>
