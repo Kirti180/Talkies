@@ -15,7 +15,7 @@ const formateMessage = require("./routes/messages");
 const server = http.createServer(app);
 const io = socketio(server);
 
-app.get('/start', (req,res)=>{
+app.get('/start', (req, res) => {
   res.send("welcome to Talkies chat server");
 })
 
@@ -63,7 +63,7 @@ io.on("connection", (socket) => {
     const user = userLeave(socket.id);
     console.log("one user left");
 
-    if(!user || !user.room){
+    if (!user || !user.room) {
       return;
     }
 
