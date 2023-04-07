@@ -8,7 +8,6 @@ login.addEventListener("submit", (e) => {
 
   let lemail = document.getElementById("lemail").value;
   let lpass = document.getElementById("lpass").value;
-<<<<<<< HEAD
 
   if (!lemail || !lpass) {
     Swal.fire({
@@ -23,8 +22,6 @@ login.addEventListener("submit", (e) => {
   showLoader();
   document.getElementById("login").style.visibility = "hidden";
 
-=======
->>>>>>> 855eb2f26764dfe5e9f55f4ace67fc767ba31f5b
   let signdata = {
     email: lemail,
     password: lpass,
@@ -45,7 +42,6 @@ login.addEventListener("submit", (e) => {
       document.getElementById("lemail").value = "";
       document.getElementById("lpass").value = "";
       if (res.ok) {
-<<<<<<< HEAD
         Swal.fire(
 
           'Login Successfull',
@@ -85,18 +81,3 @@ login.addEventListener("submit", (e) => {
 
 
 
-=======
-        alert("Login Successfull");
-        localStorage.setItem("userDetails", JSON.stringify(res.user_details));
-        localStorage.setItem("token", res.token);
-        window.location.href = "./dashboard.html";
-      } else {
-        alert(`${res.msg}`);
-      }
-    })
-    .catch((err) => {
-      console.log(err);
-      alert("Something went wrong")
-    });
-});
->>>>>>> 855eb2f26764dfe5e9f55f4ace67fc767ba31f5b

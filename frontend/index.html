@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Style/index.css" />
+    <link rel="icon" href="./Images/fav_icon-bg.png" />
+    <!-- <link rel="stylesheet" href="./style/login.css"> -->
+
+    <!-- Loader -->
+    <link rel="stylesheet" href="./Style/loaderTornado.css" />
+    <script src="./Scripts/loaderTornado.js"></script>
+    <!-- Loader End-->
+
+    <link rel="stylesheet" href="./Style/nav.css" />
+    <link rel="stylesheet" href="./Style/footer.css" />
+    <!--FONT AWESOME-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- osm font link -->
+    <script
+      src="https://kit.fontawesome.com/714346974b.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Talkies-Let's connect</title>
+  </head>
+
+  <body>
+    <nav>
+      <div id="navBar">
+        <div>
+          <a href="./index.html"
+            ><img src="./Images/icon.png" alt="logo" onclick="logo()"
+          /></a>
+        </div>
+        <div>
+          <ul>
+            <li class="item"><a href="#">Products</a></li>
+
+            <li class="item"><a href="#">Solutions</a></li>
+
+            <li class="item"><a href="#">Resource</a></li>
+            <li class="item"><a href="#">Plans & Pricing</a></li>
+          </ul>
+        </div>
+        <div id="signup-box">
+          <ul>
+            <!-- <li class="item"><a href="#"> Join</a></li>
+                    <li class="item"><a href="#"> Host</a></li> -->
+            <li class="item-button"><a href="login.html">Log In </a></li>
+            <li class="item-button-secondary">
+              <a href="signup.html">Sign Up Free</a>
+            </li>
+          </ul>
+        </div>
+        <div id="logout-box">
+          <i class="fa-solid fa-user"></i
+          ><span><a id="name-user" href="#" class="indexstyle"></a> </span>
+          <span><a href="./dashboard.html"> Dashboard</a></span
+          ><span id="logout">Logout</span>
+        </div>
+      </div>
+    </nav>
+    <section id="banner">
+      <img
+        style="height: 100%"
+        src="https://user-images.githubusercontent.com/114337213/229350622-fdb010a5-269e-4a6a-b1cb-72bc32533729.jpg"
+        alt=""
+      />
+    </section>
+    <main>
+      <!-- 1st section -->
+
+      <div id="section_1">
+        <div>
+          <h1>
+            Powering organizations across <br />
+            industries and geographies
+          </h1>
+          <br />
+          <h3>
+            Zoom helps consolidate communications, connect people,<br />
+            and collaborate better together in the boardroom, classroom, <br />
+            operating room, and everywhere in between.
+          </h3>
+          <br />
+          <button id="btn_home">Explore Industry Solutions</button>
+        </div>
+        <div id="section_1_child">
+          <button id="btn_home">Education</button>
+          <button id="btn_home">Government</button>
+          <button id="btn_home">Financial Services</button>
+          <button id="btn_home">Healthcare</button>
+          <button id="btn_home">Manufacturing</button>
+          <button id="btn_home">Retail</button>
+        </div>
+      </div>
+
+      <!-- Loader -->
+      <div class="loader" id="loader">
+        <div class="dots">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+        <div class="dots">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+        <div class="dots">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+        <div class="dots">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+        <div class="dots">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+        <div class="dots">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+      <!-- Loader End -->
+
+      <!-- 3rd section -->
+      <div id="section_3">
+        <h1>
+          Simplified video conferencing and messaging <br />
+          across any device
+        </h1>
+        <br /><br />
+        <div id="section_3_child">
+          <div>
+            <div>
+              <img
+                id="image"
+                src="https://explore.zoom.us/media/icon-frame-1.svg"
+                alt=""
+              />
+            </div>
+            <div>
+              <h2>Unparalleled usability</h2>
+              <br />
+              <p>
+                Enable quick adoption with virtual meeting capabilities that
+                make it easy to start, join, collaborate, and schedule meetings
+                across any device.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <img
+                id="image"
+                src="https://explore.zoom.us/media/icon-frame.svg"
+                alt=""
+              />
+            </div>
+            <div>
+              <h2>Join anywhere, on any device</h2>
+              <br />
+              <p>
+                Zoom Meetings syncs with your calendar system and delivers
+                streamlined enterprise-grade video conferencing from desktop,
+                mobile and dedicated Zoom for Home Devices
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <img
+                id="image"
+                src="https://explore.zoom.us/media/secure-logo.svg"
+                alt=""
+              />
+            </div>
+            <div>
+              <h2>Powerful virtual meeting security</h2>
+              <br />
+              <p>
+                Robust security settings help to ensure disruption-free virtual
+                meetings, with encryption, role-based security, Passcode
+                protection, Waiting Rooms, and more.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4rd section -->
+      <div id="section_4">
+        <h1>Built for modern teams</h1>
+        <br /><br />
+        <div id="section_4_child">
+          <div>
+            <img src="https://explore.zoom.us/media/hd-768x431.jpg" alt="" />
+            <h2>HD audio and video meetings</h2>
+            <p>
+              Bring HD video and audio to your virtual meetings with
+              <br />support for up to 1000 video participants and 49
+              <br />videos on screen.
+            </p>
+          </div>
+          <div>
+            <img
+              src="https://explore.zoom.us/media/calendar-768x431.jpg"
+              alt=""
+            />
+            <h2>Streamlined calendaring</h2>
+            <p>
+              Easily start or schedule meetings directly from Outlook,
+              <br />Gmail, or iCalendar.
+            </p>
+          </div>
+          <div>
+            <img src="https://explore.zoom.us/media/hd-768x431.jpg" alt="" />
+            <h2>Built-in collaboration tools</h2>
+            <p>
+              Multiple video call participants can share their screens
+              simultaneously and co-annotate for a more<br />
+              interactive virtual meeting.
+            </p>
+          </div>
+          <div>
+            <img src="https://explore.zoom.us/media/poll-768x431.jpg" alt="" />
+            <h2>Made for Connecting</h2>
+            <p>
+              Filters, reactions, polls, hand raising, and music or video
+              sharing make virtual meetings more fun and engaging.
+            </p>
+          </div>
+          <div>
+            <img
+              src="https://explore.zoom.us/media/recording-768x431.jpg"
+              alt=""
+            />
+            <h2>Meeting recording and transcripts</h2>
+            <p>
+              Record your virtual meetings locally or to the cloud, with
+              searchable transcripts.
+            </p>
+          </div>
+          <div>
+            <img
+              src="https://explore.zoom.us/media/team-chat-768x431.jpg"
+              alt=""
+            />
+            <h2>Team Chat</h2>
+            <p>
+              Chat with groups, searchable history, integrated file
+              <br />sharing, and 10 year archive. Easily escalate into<br />
+              1:1 or group video calls.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5th -->
+      <div id="section_5">
+        <h1>
+          Customers who switch to Zoom report an<br />
+          increase in performance, trust, and engagement
+        </h1>
+        <div id="section_5_child">
+          <div>
+            <h1>95%</h1>
+            <p>report an increase in <br />performance</p>
+          </div>
+          <div>
+            <h1>95%</h1>
+            <p>
+              report a greater sense of<br />
+              trust
+            </p>
+          </div>
+          <div>
+            <h1>93%</h1>
+            <p>
+              report a greater sense of<br />
+              engagement
+            </p>
+          </div>
+          <div>
+            <h1>85%</h1>
+            <p>
+              saw an increase in video<br />
+              usage
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- 6th -->
+      <div id="section_6">
+        <div>
+          <img
+            src="https://explore.zoom.us/media/work-from-home-1.jpg"
+            alt=""
+          />
+        </div>
+        <div id="section_6_child">
+          <h1>Confidently work from home</h1>
+          <br /><br />
+          <h2>Features to help you work from home and have fun doing it.</h2>
+          <br />
+          <div id="check">
+            <div>
+              <img
+                src="https://explore.zoom.us/media/zoom-icon-green-check.svg"
+                alt=""
+              />
+            </div>
+            <div>
+              <span>
+                Clear audio with advanced background noise suppression</span
+              >
+            </div>
+          </div>
+          <br />
+          <div id="check">
+            <div>
+              <img
+                src="https://explore.zoom.us/media/zoom-icon-green-check.svg"
+                alt=""
+              />
+            </div>
+            <div><span> Share slides as your virtual background</span></div>
+          </div>
+          <br />
+          <div id="check">
+            <div>
+              <img
+                src="https://explore.zoom.us/media/zoom-icon-green-check.svg"
+                alt=""
+              />
+            </div>
+            <div>
+              <span>
+                Feel camera-ready with adjustable appearance touch up</span
+              >
+            </div>
+          </div>
+          <br />
+          <div id="check">
+            <div>
+              <img
+                src="https://explore.zoom.us/media/zoom-icon-green-check.svg"
+                alt=""
+              />
+            </div>
+            <div>
+              <span>
+                Look well in any situation by adjusting advanced lighting</span
+              >
+            </div>
+          </div>
+          <br />
+          <div id="check">
+            <div>
+              <img
+                src="https://explore.zoom.us/media/zoom-icon-green-check.svg"
+                alt=""
+              />
+            </div>
+            <div><span> More reactions to let your feelings show</span></div>
+          </div>
+          <br />
+        </div>
+      </div>
+      <!-- 7th -->
+      <div id="section_7">
+        <div id="section_7_child">
+          <h1>Modernize your virtual meeting software</h1>
+          <br /><br />
+          <h2>
+            Zoom Meetings for desktop and mobile provide the virtual meeting
+            tools to make every meeting a great one.
+          </h2>
+          <br />
+          <div id="check">
+            <div>
+              <img
+                src="https://explore.zoom.us/media/zoom-icon-green-check.svg"
+                alt=""
+              />
+            </div>
+            <div>
+              <span>
+                Focus on your virtual meeting – click record to leave the note
+                taking to Zoom’s<br />
+                auto-generated, searchable transcripts</span
+              >
+            </div>
+          </div>
+          <br />
+          <div id="check">
+            <div>
+              <img
+                src="https://explore.zoom.us/media/zoom-icon-green-check.svg"
+                alt=""
+              />
+            </div>
+            <div>
+              <span
+                >Share and play videos with full audio and video transmit
+                without uploading the content</span
+              >
+            </div>
+          </div>
+          <br />
+          <div id="check">
+            <div>
+              <img
+                src="https://explore.zoom.us/media/zoom-icon-green-check.svg"
+                alt=""
+              />
+            </div>
+            <div>
+              <span>
+                Feel meeting ready with virtual backgrounds, touch up my
+                appearance, and lighting controls</span
+              >
+            </div>
+          </div>
+          <br />
+          <p>
+            Download Talkies Mobile Apps for iPhone or Android Download Zoom
+            Client for Meetings
+          </p>
+          <br />
+        </div>
+        <div>
+          <img
+            src="https://explore.zoom.us/media/meetings-software-1.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <!-- 8th -->
+      <div id="section_8">
+        <div>
+          <img
+            id="image"
+            src="https://explore.zoom.us/media/chat-mobile.gif"
+            alt=""
+          />
+        </div>
+        <div id="section_8_child">
+          <h1>A thoughtful approach to mobile meetings</h1>
+          <br /><br />
+          <h2>
+            Today’s professionals need to be able to work and video conference
+            wherever they are. <br />Talkies Meetings for mobile provides the
+            same great video conferencing experience that you’d expect from the
+            desktop client and more.
+          </h2>
+          <br />
+          <div id="check">
+            <div>
+              <img
+                src="https://explore.zoom.us/media/zoom-icon-green-check.svg"
+                alt=""
+              />
+            </div>
+            <div>
+              <span>
+                Focus on your virtual meeting – click record to leave the note
+                taking to Zoom’s<br />
+                auto-generated, searchable transcripts</span
+              >
+            </div>
+          </div>
+          <br />
+          <div id="check">
+            <div>
+              <img
+                src="https://explore.zoom.us/media/zoom-icon-green-check.svg"
+                alt=""
+              />
+            </div>
+            <div>
+              <span
+                >Turn on Virtual Backgrounds and select the image of your choice
+                (iPhone 8+ required)</span
+              >
+            </div>
+          </div>
+          <br />
+          <div id="check">
+            <div>
+              <img
+                src="https://explore.zoom.us/media/zoom-icon-green-check.svg"
+                alt=""
+              />
+            </div>
+            <div>
+              <span> Use Safe Driving Mode or Apple Carplay (iPhone only)</span>
+            </div>
+          </div>
+          <br />
+        </div>
+      </div>
+      <!-- 9th -->
+      <div id="section_9">
+        <div id="section_9_child">
+          <h1>Communicate instantly on Zoom Team Chat</h1>
+          <br /><br />
+          <h2>
+            Integrated persistent instant messaging streamlines workspace
+            collaboration for team members across the desktop and mobile
+            clients.
+          </h2>
+          <br />
+          <div id="check">
+            <div>
+              <img
+                src="https://explore.zoom.us/media/zoom-icon-green-check.svg"
+                alt=""
+              />
+            </div>
+            <div>
+              <span> Instantly start a virtual meeting or phone call</span>
+            </div>
+          </div>
+          <br />
+          <div id="check">
+            <div>
+              <img
+                src="https://explore.zoom.us/media/zoom-icon-green-check.svg"
+                alt=""
+              />
+            </div>
+            <div>
+              <span
+                >Share files and search content in public or private
+                groups</span
+              >
+            </div>
+          </div>
+          <br />
+          <div id="check">
+            <div>
+              <img
+                src="https://explore.zoom.us/media/zoom-icon-green-check.svg"
+                alt=""
+              />
+            </div>
+            <div>
+              <span>
+                Connect external users while keeping information safe</span
+              >
+            </div>
+          </div>
+          <br />
+          <p>See More Features</p>
+          <br />
+        </div>
+        <div>
+          <img src="https://explore.zoom.us/media/zoom-chat-1.jpg" alt="" />
+        </div>
+      </div>
+
+      <!-- 2nd section -->
+      <div id="section_2">
+        <h1>Ready to get started?</h1>
+        <div>
+          <button id="btn_home">Sign Up, It's Free</button>
+          <button id="btn_home">Plans & Pricing</button>
+        </div>
+      </div>
+    </main>
+    <!--footer-->
+    <footer class="padding_4x">
+      <div class="flex">
+        <section class="flex-content padding_1x">
+          <h3>About</h3>
+          <a href="#">Zoom Blog</a>
+          <a href="#">Customers</a>
+          <a href="#">Our Team</a>
+          <a href="#">Careers</a>
+          <a href="#">Integrations</a>
+          <a href="#">Partners</a>
+          <a href="#">Investors</a>
+          <a href="#">Talkies Ventures</a>
+          <a href="#">Developer</a>
+        </section>
+        <section class="flex-content padding_1x">
+          <h3>Download</h3>
+          <a href="#">Meetings Client</a>
+          <a href="#">Zoom Rooms Client</a>
+          <a href="#">Zoom Rooms Controller</a>
+          <a href="#">Browser Extension</a>
+          <a href="#">Outlook Plug-in</a>
+          <a href="#">iPhone/iPad App</a>
+          <a href="#">Android App</a>
+          <a href="#">Zoom Virtual Backgrounds</a>
+        </section>
+        <section class="flex-content padding_1x">
+          <h3>Sales</h3>
+          <a href="#">1.888.799.9666</a>
+          <a href="#">Contact Sales</a>
+          <a href="#">Plans & Pricing</a>
+          <a href="#">Request a Demo</a>
+          <a href="#">Webinars and Events</a>
+        </section>
+        <section class="flex-content padding_1x">
+          <h3>Support</h3>
+          <a href="#">Test Talkies</a>
+          <a href="#">Account</a>
+          <a href="#">Support Center</a>
+          <a href="#">Learning Center</a>
+          <a href="#">Feedback</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Developer Support</a>
+          <a href="#">Legal Policies</a>
+        </section>
+        <section class="flex-content padding_1x">
+          <h3>Newsletter</h3>
+          <a>You can trust us. we only send promo offers,</a> <br />
+          <fieldset class="fixed_flex">
+            <input
+              type="email"
+              name="newsletter"
+              placeholder="Your Email Address"
+            />
+            <button class="btn btn_2">Subscribe</button>
+          </fieldset>
+        </section>
+      </div>
+      <div class="flex">
+        <section class="flex-content padding_1x">
+          <p>Copyright ©2023 All rights reserved || Talkies - Let's connect</p>
+        </section>
+        <section class="flex-content padding_1x">
+          <a href="https://www.facebook.com/zoom"
+            ><i class="fa fa-facebook"></i
+          ></a>
+          <a href="https://twitter.com/zoom"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.instagram.com/zoom/"
+            ><i class="fa fa-dribbble"></i
+          ></a>
+          <a href="https://www.linkedin.com/company/zoom-video-communications/"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
+<script>
+  let check = localStorage.getItem("signedIn");
+  console.log(check);
+  if (check == "true") {
+    document.getElementById('signup-box').style.display = 'none'
+    document.getElementById('logout-box').style.display = 'block'
+    let namee = JSON.parse(localStorage.getItem('userDetails'))
+    document.getElementById('name-user').innerText = 'Hey! ' + namee?.name
+  } else {
+    document.getElementById('signup-box').style.display = 'block'
+    document.getElementById('logout-box').style.display = 'none'
+  }
+
+  //  logout start
+
+  const logout = document.getElementById('logout')
+
+  logout.addEventListener('click', async () => {
+    const token = localStorage.getItem('token')
+
+    const request = await fetch(
+      `https://talkies-authentication-server-1.onrender.com/user/logout`,
+      {
+        method: 'POST',
+        headers: {
+          'content-type': 'application/json'
+        },
+        body: JSON.stringify({ token })
+      }
+    )
+    localStorage.clear()
+    localStorage.setItem("signedIn",false);
+    window.location.href = './index.html'
+  })
+</script>
