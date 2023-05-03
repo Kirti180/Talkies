@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./Style/dashboard.css" />
+    <link rel="icon" href="./Images/fav_icon-bg.png" />
     <script
       src="https://kit.fontawesome.com/714346974b.js"
       crossorigin="anonymous"
@@ -16,7 +17,15 @@
     ></script>
     <!-- <link rel="stylesheet" href="./Style/login.css.css"> -->
 
+
     <title>Dashboard</title>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Loader -->
+    <link rel="stylesheet" href="./Style/loaderTornado.css" />
+    <script src="./Scripts/loaderTornado.js"></script>
+    <!-- Loader End-->
   </head>
   <body>
     <!-- navbar -->
@@ -24,53 +33,52 @@
       <i class="fa-solid fa-bars" id="hamburger"></i>
       <div id="nav_right_side">
         <div id="brand_name">
-          <a href="./index.html" class="indexstyle1"
-            ><img src="./Images/icon.png" alt="" height="100%" width="100% "
+          <a href="https://talkies-lets-connect.netlify.app/index.html" class="indexstyle1"
+            ><img
+              src="https://user-images.githubusercontent.com/115463536/229345303-289f966a-5629-4d01-9166-4381ac221e95.png"
+              alt=""
+              height="100%"
+              width="100% "
           /></a>
         </div>
         <!-- <input type="text" placeholder="Search here" > -->
       </div>
       <div id="nav_left_side">
         <div>
-          <i class="fa-solid fa-house fa-xl"></i
-          ><span><a class="indexstyle" href="./index.html">Home</a></span>
-        </div>
-
-        <div>
-          <i class="fa-solid fa-video fa-xl"></i
+          <i class="fa-solid fa-video"></i
           ><span
             ><a
-              href="../backend/features/video/video-sharing-frontend/index.html"
+              href="https://talkies-video-chat.netlify.app?type=videochat"
               class="indexstyle"
               >Video Call</a
             >
           </span>
         </div>
         <div>
-          <i class="fa-solid fa-video fa-xl"></i
+          <i class="fa-solid fa-video"></i
           ><span
-            ><a href="./cartpage.html" class="indexstyle">Screen Share</a>
+            ><a
+              href="https://talkies-share-screen.netlify.app?type=screenshare"
+              class="indexstyle"
+              >Screen Share</a
+            >
           </span>
         </div>
         <div>
-          <i class="fa-solid fa-message fa-xl"></i
+          <i class="fa-solid fa-message"></i
           ><span
+
             ><a
-              href="../backend/features/messages/public/message.html"
+              href="https://talkies-lets-connect.netlify.app/room.html?type=message"
               class="indexstyle"
               >Message</a
             >
+
           </span>
         </div>
         <div>
-          <i class="fa-solid fa-user fa-xl"></i
-          ><span
-            ><a
-              href="#"
-              class="indexstyle"
-              >Name</a
-            >
-          </span>
+          <i class="fa-solid fa-user"></i
+          ><span><a id="name-user" href="#" class="indexstyle"></a> </span>
         </div>
       </div>
     </nav>
@@ -84,73 +92,177 @@
     <br /><br />
     <!-- main content -->
     <div id="main_dashboard">
-      <div>
-        <img class="img1_main" src="./Images/group-working.gif" alt="" />
+      <!-- Loader -->
+      <div class="loader" id="loader">
+        <div class="dots">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+        <div class="dots">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+        <div class="dots">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+        <div class="dots">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+        <div class="dots">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+        <div class="dots">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+      <!-- Loader End -->
+      <div id="ïmg1">
+        <img
+          class="img1_main"
+          src="https://user-images.githubusercontent.com/115463536/229345353-f12c3416-fa09-4d7c-8190-a42273105e9a.gif"
+          alt=""
+        />
       </div>
       <div id="main_img_info">
-        <a href="../backend/features/video/video-sharing-frontend/index.html">
+        <a href="https://talkies-video-chat.netlify.app?type=videochat">
           <div class="div_img_info">
-            <img class="img_info" src="./Images/video-call.gif" alt="" />
+            <img
+              class="img_info"
+              src="https://user-images.githubusercontent.com/115463536/229345389-d7c5186e-d34c-46fa-a5e7-3b63815f9305.gif"
+              alt=""
+            />
             <p>Video Call</p>
           </div>
         </a>
-        <a href="../backend/features/screenshare/index.html">
+        <a href="https://talkies-share-screen.netlify.app?type=screenshare">
           <div class="div_img_info">
-            <img class="img_info" src="./Images/screen-share.gif" alt="" />
+            <img
+              class="img_info"
+              src="https://user-images.githubusercontent.com/115463536/229345427-8a022b0e-2638-4ce3-b4e2-ffc94ba79745.gif"
+              alt=""
+            />
             <p>Screen Share</p>
           </div></a
         >
-        <a href="../backend/features/messages/public/message.html">
+        <a href="https://talkies-lets-connect.netlify.app/room.html?type=message">
           <div class="div_img_info">
-            <img class="img_info" src="./Images/msg.gif" alt="" />
+            <img
+              class="img_info"
+              src="https://user-images.githubusercontent.com/115463536/229345461-fd213545-2b3c-4ae0-93f3-ef1f5e725eff.gif"
+              alt=""
+            />
             <p>Message</p>
           </div>
         </a>
-        <a href="../backend/features/video/video-sharing-frontend/index.html">
-          <div class="div_img_info">
-            <img class="img_info" src="./Images/connect.gif" alt="" />
-            <p>Connect</p>
+        <!-- <a href="./index.html"> -->
+          <spam>
+          <div class="div_img_info" id="logout">
+            <img
+              class="img_info"
+              src="https://user-images.githubusercontent.com/115463536/229345490-98dd7120-789b-4411-899d-4a8ad9c84b5c.gif"
+              alt=""
+            />
+            <p>Logout</p>
           </div>
-        </a>
+        </spam>
+        <!-- </a> -->
       </div>
     </div>
     <footer></footer>
   </body>
 </html>
-<script>
-  let ham = document.getElementById("hamburger");
-  let screenshare = document.getElementById("ss");
-  let videocall = document.getElementById("vc");
-  let message = document.getElementById("msg");
-  let home = document.getElementById("hm");
-  videocall.addEventListener("click",()=>{
-    window.location.href="../backend/features/video/video-sharing-frontend/index.html"
-  })
-  screenshare.addEventListener("click",()=>{
-    window.location.href="../backend/features/video/video-sharing-frontend/index.html"
-  })
-  message.addEventListener("click",()=>{
-    window.location.href="../backend/features/video/video-sharing-frontend/index.html"
-  })
-  home.addEventListener("click",()=>{
-    window.location.href="./index.html"
-  })
-  ham.addEventListener("click", function () {
-    this.classList.toggle("is-active");
-    if (this.classList.contains("is-active")) {
-      openNav();
-    } else {
-      closeNav();
-    }
-  });
-  function openNav() {
-    console.log("open");
-    document.getElementById("burger").style.display = "initial";
-    document.getElementById("burger").style.transition =
-      "transform 250ms ease-in-out";
-  }
-  function closeNav() {
-    console.log("close nav");
-    document.getElementById("burger").style.display = "none";
-  }
-</script>
+<script src="./Scripts/dashboard.js"></script>
