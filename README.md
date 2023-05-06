@@ -119,8 +119,8 @@ It includes features that allows user to chat, video call, screen share with eac
 
 ## Home Page
 ![home page](https://user-images.githubusercontent.com/112820391/229371183-24ec49f9-2dc6-41e5-bb21-0f340f8dec72.PNG)
-## footer page
-![footer page](https://user-images.githubusercontent.com/112820391/229371197-2fe56e7e-ff79-46ce-bccd-ad6c84c10ab7.PNG)
+## Footer Page
+![ooter page](https://user-images.githubusercontent.com/112820391/229371197-2fe56e7e-ff79-46ce-bccd-ad6c84c10ab7.PNG)
 ## siging page
 ![sigin page](https://user-images.githubusercontent.com/112820391/229371204-bb79974c-4d59-42a5-824c-49f884a4d860.PNG)
 ## login page
