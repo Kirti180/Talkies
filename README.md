@@ -123,7 +123,7 @@ It includes features that allows user to chat, video call, screen share with eac
 ![ooter page](https://user-images.githubusercontent.com/112820391/229371197-2fe56e7e-ff79-46ce-bccd-ad6c84c10ab7.PNG)
 ## Signing Page
 ![sigin page](https://user-images.githubusercontent.com/112820391/229371204-bb79974c-4d59-42a5-824c-49f884a4d860.PNG)
-## login page
+## Login Page
 ![login page](https://user-images.githubusercontent.com/112820391/229371208-37d675ae-2f72-4b28-9951-3de7c3044118.PNG)
 ## dashboard page
 ![dashboard page](https://user-images.githubusercontent.com/112820391/229371233-bea4c2b8-75d7-4b2b-b6e1-e95bc52a4093.PNG)
