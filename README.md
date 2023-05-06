@@ -127,6 +127,6 @@ It includes features that allows user to chat, video call, screen share with eac
 ![login page](https://user-images.githubusercontent.com/112820391/229371208-37d675ae-2f72-4b28-9951-3de7c3044118.PNG)
 ## Dashboard Page
 ![dashboard page](https://user-images.githubusercontent.com/112820391/229371233-bea4c2b8-75d7-4b2b-b6e1-e95bc52a4093.PNG)
-## video chat platform
+## Video Chat Platform
 ![video chat platform](https://user-images.githubusercontent.com/112820391/229371247-f2d3b3a3-7dff-40cb-9c2e-6770234979d1.PNG)
 
